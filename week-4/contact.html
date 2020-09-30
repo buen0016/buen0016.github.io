@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reggie's Coffee Shop Contact</title>
+  </head>
+
+  <body>
+    <!-- Struture -->
+
+    <header>
+      <h1>Reggie's Coffee Shop</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Content -->
+    <main>
+      <h2>Contact Us</h2>
+      <table border>
+        <caption>
+          Hours of operation
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Days</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Mon - Fri</td>
+            <td>6AM - 9PM</td>
+          </tr>
+          <tr>
+            <td>Sat - Sun</td>
+            <td>9AM - 9PM</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section>
+        <h3>We love to hear from you</h3>
+
+        <!-- Add form -->
+        <form action="thanks.html" method="POST">
+          <div>
+            <label for="fullname">Your Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="your name here"
+              value="Mr"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="youremail">Email</label>
+            <input type="email" id="youremail" name="yourmail" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div>
+            <label for="tickets">How Many Tickets? (sold in pairs)</label>
+            <input
+              type="number"
+              name="tickets"
+              id="tickets"
+              min="2"
+              max="10"
+              step="2"
+            />
+          </div>
+          <div>
+            <label for="row">Select Row</label>
+            <select name="row" id="row">
+              <option value="Front">Front</option>
+              <option value="Centar" selected>Center</option>
+              <option value="Back">Back</option>
+            </select>
+          </div>
+          <div>
+            <h3>Have you been here before?</h3>
+            <label for="yes">yes</label>
+            <input type="radio" id="yes" name="past" />
+            <label for="yes">no</label>
+            <input type="radio" id="No" name="past" />
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="policies"
+              required
+              checked
+              id="policies"
+            />
+            <label for="policies">I agree with the term and policies</label>
+          </div>
+
+          <button type="submit">Sign me up!</button>
+        </form>
+      </section>
+      <br />
+    </main>
+    <!-- Footer of the site -->
+    <footer>
+      <!-- HTML Entities -->
+      Copyright &copy; Reggie&apos;s Coffee Shop, 2020
+    </footer>
+  </body>
+</html>
