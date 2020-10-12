@@ -1,0 +1,62 @@
+/* Add a CSS file to your website */
+
+/* Inheritance - target the body tag to change the font family and increase the font size to 18px */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/* Select multiple elements - select both header and footer elements and add the same background colour */
+
+header,
+footer {
+  background-color: rgb(0, 149, 207);
+}
+
+/* Class selector - add a class of site-title to the main heading of the site and select the class in CSS to change the colour of text of the heading */
+
+.site-title {
+  color: white;
+}
+
+/* Id selector - add an id my-image to your image and select the id in CSS to add a box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour */
+
+#my-image {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+/* Replace the bullets from the list of hobbies with squares */
+
+ul li {
+  list-style: square;
+}
+
+/* Using the nth-child selector - add a background to the odd list items in the hobby list */
+
+section ul li:nth-child(2n + 1) {
+  background: darkgrey;
+}
+
+/* Styling Navigation */
+
+/* Remove Bullets, Remove underline from the links */
+nav ul li a {
+  text-decoration: none;
+  background-color: darkorange;
+  border-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  background-color: rgb(0, 149, 207);
+}
+
+/* Add background and border to the links */
+
+nav ul li {
+  list-style: none;
+  border-color: black;
+}

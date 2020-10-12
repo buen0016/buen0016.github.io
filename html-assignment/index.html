@@ -3,27 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
+
     <title>Diego Bueno</title>
+    <link rel="stylesheet" href="/html-assignment/main.css" />
   </head>
   <body>
     <header>
-      <h1>Diego Bueno</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="notes.html">Notes</a>
-          </li>
-        </ul>
-      </nav>
+      <h1 class="site-title">Diego Bueno</h1>
     </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          </li>
+          <li>
+          <a href="notes.html">Notes</a>
+        </li>
+      </ul>
+    </nav>
     <!-- Start Content -->
     <hr />
 
@@ -62,6 +59,7 @@
     <section>
       <h2>Some photos in beautiful places</h2>
       <img
+        id="my-image"
         src="/html-assignment/images/2_personal_photo.jpg"
         alt="Me in a Lucern Mountains in Switezerland"
       />
@@ -74,15 +72,15 @@
     <!-- About Hobbies -->
     <section>
       <h2>My Hobbies</h2>
-      <ul>
+      <ul class="my-hobbies">
         <li>Photography</li>
         <li>Video-games</li>
+        <li>Readigng Books</li>
       </ul>
       <br />
     </section>
-
+    <hr />
     <footer>
-      <hr />
       Copyright &copy; Bueno&apos;s Company, 9<sup>th</sup> Sep 2020
     </footer>
   </body>
