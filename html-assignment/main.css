@@ -41,6 +41,9 @@ section ul li:nth-child(2n + 1) {
 /* Styling Navigation */
 
 /* Remove Bullets, Remove underline from the links */
+
+/* Add background and border to the links */
+
 nav ul li a {
   text-decoration: none;
   background-color: darkorange;
@@ -54,7 +57,7 @@ nav ul a:focus {
   background-color: rgb(0, 149, 207);
 }
 
-/* Add background and border to the links */
+/* Change the background colour on hover or focus state of the links */
 
 nav ul li {
   list-style: none;
