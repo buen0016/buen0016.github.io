@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* Adding background image */
+  background-image: url(../images/white_brick_wall.png);
+}
+
+/* This is a CSS Comment*/
+
+p {
+  background-color: lightblue;
+}
+
+/* Selecting multiple elements to add same styles */
+
+h1 {
+  color: white;
+}
+
+h1 h2,
+h3,
+h4 {
+  text-decoration: underline;
+}
+
+/* selecting child elements */
+
+nav ul {
+  list-style: none;
+}
+
+/* Selecting child elements multiple level */
+nav ul a {
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+/* Selectinh HTML element with class name */
+
+.orange-text {
+  color: orange;
+  background: darkslategrey;
+  text-decoration: none;
+}
+
+/* selecting id value for styling the element */
+#tow {
+  /* color image repeat x-axis y-axis */
+  background: orange url(../images/bread.jpg) no-repeat center center;
+  background-size: cover;
+  /* additional styles to make text visible */
+  color: white;
+  /* font-size: 24px; */
+  /* updating font-size to rem */
+  /* updtaing font size to rem 1.5 x 16 = 24 */
+  font-size: 1.5rem;
+  /* adding paffing to add space between the border and the content */
+  padding: 1em;
+  /* 1em = 1 x 24 = 24px */
+  /* adding width using viewport width unit */
+  width: 100vw;
+}
+
+/* We can add multiple classes to one element */
+.large-text {
+  font-size: 20px;
+}
+
+/* Child selectors or Direct Child Selector, selecting only the p directly the article */
+
+article > p {
+  font-size: 24px;
+  font-weight: bold;
+  /* values light, normal, bold, bolder OR 100, 200, 300, 400... */
+  line-height: 1.5;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+/* Adjacent sybling Selector, Slecting only ul htat is adjacent to h3 */
+
+h3 + ul {
+  border: 1px solid black;
+}
+
+/* Attribute selector 
+Selecting alement that has attribute of href set to value #tow */
+
+[href='#tow'] {
+  font-weight: bold;
+}
+
+[target='_blank'] {
+  text-transform: uppercase;
+}
+
+/* Using Pseudo Classes. Styling Navigation*/
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+  background: orange;
+  /* box shadow horizontal vertical blur spread color */
+  box-shadow: -2px 2px 2px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  text-decoration: underline;
+}
+
+/* review it doesn't work */
+nav ul a:active {
+  box-shadow: 0 0 4px 2px black;
+}
+
+/* position related selectors */
+/* first child selector */
+aside ul li:first-child {
+  font-weight: bold;
+  color: violet;
+}
+/* las child selector */
+section ol li:last-child {
+  font-weight: bold;
+  color: yellowgreen;
+}
+
+/* Collapse table borders into one */
+table {
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+  /* hex value for color with 6 character */
+  background-color: crimson;
+}
+
+/* using the :nth-child() with n whwere n is 0,1,2 until the number of elments */
+
+table th:nth-child(n),
+table td:nth-child(n) {
+  border: 1px solid #000;
+}
+
+/* 2n+1 will be 1,3,5,7,.... */
+table td:nth-child(2n + 1) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background: aqua;
+}
+
+footer {
+  background: red;
+}
+
+/* Formula: inline style, id, class , tag name 
+specificity:0001*/
+
+section p {
+  width: 50%;
+  /* padding: 1em; */
+
+  /* top right bottom left */
+  /* padding: 1em 0.5em 1em 0.5em; */
+  padding: 1em 0.5em;
+
+  /* margin accepts negative values */
+  /* 2em = 2 x 16 = 32px */
+
+  margin: 2em;
+  border: 2px solid black;
+  /* 2em = 2 x size setted for the website */
+  border-bottom: 2px solid black;
+}

@@ -79,6 +79,36 @@
       </ul>
       <br />
     </section>
+
+    * 
+  adding a style using tag-name
+  specificity: 0001
+  since it comes after, cascade will overwrite the above
+*/
+footer {
+  background: red;
+}
+
+/*
+  adding a style using two tag-names 
+  specificity: 0002 
+*/
+body footer {
+  background: cornflowerblue;
+}
+
+/* 
+  adding a style using class name
+  specificity: 0010
+*/
+.site-footer {
+  background-color: orange;
+}
+
+/* 
+  adding a style using class name and tag name
+  specificity: 0011
+*/
     <hr />
     <footer>
       Copyright &copy; Bueno&apos;s Company, 9<sup>th</sup> Sep 2020
