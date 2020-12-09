@@ -1,3 +1,5 @@
+<!-- Final HTML -->
+
 <!DOCTYPE html>
 
 <!-- I change en for zxx as long we are using lorem ipsum -->
@@ -25,10 +27,10 @@
 
 </head>
 <body>
-
+    <div class="superbox">
 <!-- heeader: box1 + Banner -->
     <header>
-        
+                
         <!-- Box1: Background -->
         
         <div class="box1">
@@ -36,38 +38,33 @@
         <!-- Nav Bar -->
 
             <nav class="main-nav">
-                
-                    <ul class=nav.list>
-                        <li class="logo"><img src="images/logo.png" alt="logo"></li>
+                    <ul class=nav-list>
+                        <li class="logo"><img   src="images/logo.png" alt="logo" class="imagelogo"></li>
                         <li><a href="index.html" class="current">Home</a></li>
-                        <li><a href="#" class="current">About Us</a></li>
-                        <li><a href="#" class="current">Services</a></li>
-                        <li><a href="#" class="current">Team</a></li>
-                        <li><a href="#" class="current">Contact</a></li>
+                        <li><a href="#box3">About Us</a></li>
+                        <li><a href="#box4">Services</a></li>
+                        <li><a href="#box6">Team</a></li>
+                        <li><a href="#box7">Contact</a></li>
                         <li>
                             <div>
-                                <label for="search">Search</label>
-                                <input
-                                type="text"
-                                id="search"
-                                name="search"
-                                required
-                                />
-                                <i class="im im-magnifier"></i>
-
-                                </div>
-                            </li>
+                                <!-- <label for="search"></label> -->
+                                        <form class="box-search" action="#">
+                                        <input type="text" placeholder="Search" name="search">
+                                        <button type="submit"><i class="im im-magnifier center"></i></button>    
+                                </form>
+                            </div>
+                        </li>
                     </ul>
             </nav>       
         </div>
         <!-- Box2: Container + h1 + p + button  -->
-        <div class="box2">
-            <div class="container1">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor sapiente magnam. Cumque eos qui iusto, praesentium ab alias earum possimus, pariatur facere minus, provident at quidem quos ipsa maiores!</p>
-                <a href="#" class="btn1">Connect with us</a>
-                <i class="im im-care-right"></i>            
-            </div>
+        <div id="box2">
+                    <div class="container2">               
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor sapiente magnam. Cumque eos qui iusto, praesentium ab alias earum possimus, pariatur facere minus, provident at quidem quos ipsa maiores!</p>
+                    <a href="#" class="btn1">Connect with us</a>
+                    <i class="im im-care-right"></i>            
+                </div>
         </div>
     </header>
     <br>
@@ -79,8 +76,8 @@
 
 <!-- Box3 / Container / image1  + content1  -->
 
-        <div class="box3">
-            <div class="container1">
+        <div id="box3">
+            <div class="container3">
                 <div class="image1">
                     <img src="images/about-us.jpg" alt="about-us">
                 </div>
@@ -93,13 +90,13 @@
         </div>
 
 <!-- Box4 / Subtitle + cards  -->
-        <div class="box4">
+        <div id="box4">
 <!-- Subtitle -->
             <div class="subtitle">
                 <h2>Our Services</h2>
             </div>
 <!-- Cards -->
-        <div class="container2">
+        <div class="container4">
             <div class="card">
                 <img src="images/digital.jpg" alt="digital">
                 <h3>Digital transformation</h3>
@@ -147,7 +144,7 @@
 <!-- Box 5: Vision -->
         <div class="box5">
             <img src="images/vision.jpg" alt="">
-            <div class="container2">
+            <div class="container5">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, assumenda! Eum adipisci alias odit facilis placeat quis numquam molestias aspernatur.</p>
                 <a href="#" class="btn3">Learn More</a>
@@ -156,7 +153,7 @@
         </div>
 
 <!-- Our Team -->
-        <div class="box6">
+        <div id="box6">
         <div class="subtitle">
             <h2>Our Team</h2>
         </div>
@@ -181,7 +178,7 @@
         </div>
 
 <!-- Contact Us -->
-        <div class="box7">
+        <div id="box7">
         <div class="subtitle">
             <h2>Contact Us</h2>
             </div>
@@ -256,6 +253,6 @@
         </div>
 
     </footer>
-    
+</div>
 </body>
 </html>
