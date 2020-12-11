@@ -206,6 +206,11 @@ h3 {
   font-size: 2.25rem;
 }
 
+p,
+a {
+  font-size: 1.25rem;
+}
+
 /* ----- Menu - Div Box1 ----- */
 
 div.box1 {
@@ -270,45 +275,69 @@ div.box1 {
   width: 100%;
 }
 
+/* Buttons */
+
+.btn1 {
+  display: inline-block;
+  font-size: 18px;
+  color: #222;
+  background: #c78c06;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+
+div.btn1 a {
+  color: #222;
+  text-decoration: none;
+}
+
+div.btn1 i {
+  color: #222;
+  margin-right: 20px;
+}
+
 /* Styling Box 2: Image / container1 / h1 / p / Button */
 
 #box2 {
-  display: flex;
+  background: url('../images/main-banner.jpg');
+  justify-content: center;
   height: 600px;
-  background: #222 url('../images/main-banner.jpg') no-repeat center bottom;
+  display: flex;
+  align-items: center;
 }
 
-.container2 {
-  align-self: center;
+div .box2-container {
+  position: relative;
+  background: none;
   width: 80%;
-  height: 400px;
-  background-color: #222;
+  padding: 10px;
+}
+
+div .box2-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #222;
   opacity: 80%;
-  margin: auto;
+  width: 100%;
 }
 
-.container2 h1 {
-  text-transform: uppercase;
+div .box2-content {
   color: white;
-  padding: 10px;
-}
-
-.container2 p {
-  color: white;
-  padding: 10px;
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 25px;
+  z-index: 10;
 }
 
 div .btn1 {
-  background-color: #c78c06;
-  padding: 20px;
-  margin: 20px 10px;
-  text-decoration: none;
-  color: #222;
-  border-radius: 3px;
-  width: 200px;
-}
-
-i .im im-care-right {
-  color: #222;
+  position: relative;
+  z-index: 10;
 }
