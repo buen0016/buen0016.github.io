@@ -190,6 +190,10 @@ img {
   padding: 1em;
 }
 
+header {
+  display: inline-block;
+}
+
 /* Font Sizing Setup */
 
 /* Modular Scale https://www.modularscale.com/?1&rem&1.5 */
@@ -209,6 +213,10 @@ h3 {
 p,
 a {
   font-size: 1.25rem;
+  margin: 10px;
+}
+.subtitle {
+  font-size: 24px;
 }
 
 /* ----- Menu - Div Box1 ----- */
@@ -275,7 +283,9 @@ div.box1 {
   width: 100%;
 }
 
-/* Buttons */
+/* ----------- Buttons ---------- */
+
+/* Button 1 */
 
 .btn1 {
   display: inline-block;
@@ -302,6 +312,67 @@ div.btn1 i {
   margin-right: 20px;
 }
 
+/* Button 1 */
+
+.btn2 {
+  width: 250px;
+  height: 90px;
+  font-size: 18px;
+  color: white;
+  background: #222;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 10px 10px;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 5px;
+}
+
+.btn2:hover {
+  opacity: 0.8;
+}
+
+div.btn2 a {
+  color: white;
+  text-decoration: none;
+}
+
+div.btn2 i {
+  color: white;
+  margin-right: 20px;
+}
+
+/* Button 3 */
+
+.btn3 {
+  width: 250px;
+  height: 90px;
+  font-size: 18px;
+  color: white;
+  background: #222;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 5px;
+  border: solid #c78c06 2px;
+  margin-bottom: 5px;
+}
+
+.btn3:hover {
+  opacity: 0.8;
+}
+
+div.btn3 a {
+  color: white;
+  text-decoration: none;
+}
+
+div.btn3 i {
+  color: white;
+  margin-right: 20px;
+}
+
 /* Styling Box 2: Image / container1 / h1 / p / Button */
 
 #box2 {
@@ -316,7 +387,7 @@ div .box2-container {
   position: relative;
   background: none;
   width: 80%;
-  padding: 10px;
+  padding: 20px;
 }
 
 div .box2-container::after {
@@ -340,4 +411,80 @@ div .box2-content {
 div .btn1 {
   position: relative;
   z-index: 10;
+}
+
+/* -- Box3 / Container / image1  + content1  */
+
+#box3 {
+  background-color: #ffe6ac;
+}
+
+.box3-container3 {
+  padding: 10px;
+}
+
+/* Styling Box 4 */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe6ac;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+div .card h3 {
+  margin: 10px;
+}
+
+/* Styling Box 5 */
+
+#box5 {
+  background: url('../images/vision.jpg');
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+#box5 .box5-container {
+  margin: 10px;
+}
+
+#box5 div.box5-container h3,
+#box5 div.box5-container p {
+  color: white;
+}
+
+#box6 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe6ac;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#box6 div .box6-container2 {
+  padding: 10px;
+}
+
+#box6 h2 {
+  font-weight: bold;
+  color: #222;
+}
+
+#box6 .box6-container2 h3 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222;
+}
+
+#box6 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #222;
+}
+
+#box6 p {
+  border-top: solid #c78c06 2px;
+  padding-top: 20px;
 }
