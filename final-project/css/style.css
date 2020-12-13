@@ -159,7 +159,7 @@ table {
 ------------------------------------ */
 
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   box-sizing: border-box;
 }
@@ -200,14 +200,19 @@ header {
 
 h1 {
   font-size: 5.063rem;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 3.375rem;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 p,
@@ -219,77 +224,16 @@ a {
   font-size: 24px;
 }
 
-/* ----- Menu - Div Box1 ----- */
-
-div.box1 {
-  background-color: #222;
-}
-
-/* Logo */
-.logo {
-  background-color: #c78c06;
-}
-
-.imagelogo {
-  max-width: 100px;
-}
-
-/* Navigation */
-
-.nav-list a {
-  text-align: center;
-}
-
-.nav-list a,
-.nav-list a:link,
-.nav-list a:visited {
-  display: block;
-  padding: 1em 0;
-  text-decoration: none;
-  color: #c78c06;
-}
-
-.nav-list a:hover,
-.nav-list a:focus,
-.nav-list a.current {
-  background-color: #c78c06;
-  color: inherit;
-}
-
-.box-search {
-  display: flex;
-  align-items: center;
-}
-.main-nav input[type='text'] {
-  padding: 12px;
-  font-size: 1em;
-  border: solid 1px gray;
-  width: 95%;
-  background: white;
-  margin: 5px;
-}
-
-.main-nav button {
-  width: 44px;
-  height: 44px;
-  color: #c78c06;
-  border: 1px solid #c78c06;
-  background-color: #222;
-  text-align: center;
-}
-
-.center {
-  text-align: center;
-  width: 100%;
-}
-
-/* ----------- Buttons ---------- */
+/* ---------------------------------
+          Buttons
+------------------------------------ */
 
 /* Button 1 */
 
 .btn1 {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.2em;
+  font-weight: bold;
   color: #222;
   background: #c78c06;
   padding: 10px 20px;
@@ -373,7 +317,87 @@ div.btn3 i {
   margin-right: 20px;
 }
 
-/* Styling Box 2: Image / container1 / h1 / p / Button */
+button {
+  background-color: #222;
+  color: #c78c06;
+  border: 1px solid;
+  width: 120px;
+  padding: 12px 0;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+/* ---------------------------------
+          Header - Nav Bar
+------------------------------------ */
+
+div.box1 {
+  background-color: #222;
+}
+
+/* Logo */
+.logo {
+  background-color: #c78c06;
+}
+
+.imagelogo {
+  max-width: 100px;
+}
+
+/* Navigation */
+
+.nav-list a {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+  display: block;
+  padding: 0.7em 0;
+  text-decoration: none;
+  color: #c78c06;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+  background-color: #c78c06;
+  color: inherit;
+}
+
+.box-search {
+  display: flex;
+  align-items: center;
+}
+.main-nav input[type='text'] {
+  padding: 12px;
+  font-size: 1em;
+  border: solid 1px gray;
+  width: 95%;
+  background: white;
+  margin: 5px;
+}
+
+.main-nav button {
+  width: 44px;
+  height: 44px;
+  color: #c78c06;
+  border: 1px solid #c78c06;
+  background-color: #222;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+/* ------ Styling Box 2: Image / container1 / h1 / p / Button */
 
 #box2 {
   background: url('../images/main-banner.jpg');
@@ -386,7 +410,7 @@ div.btn3 i {
 div .box2-container {
   position: relative;
   background: none;
-  width: 80%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -417,6 +441,7 @@ div .btn1 {
 
 #box3 {
   background-color: #ffe6ac;
+  margin-bottom: 20px;
 }
 
 .box3-container3 {
@@ -441,10 +466,11 @@ div .card h3 {
 
 #box5 {
   background: url('../images/vision.jpg');
-  height: 300px;
+  height: 330px;
   background-size: cover;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 #box5 .box5-container {
   margin: 10px;
@@ -454,6 +480,8 @@ div .card h3 {
 #box5 div.box5-container p {
   color: white;
 }
+
+/* Styling Box 6 */
 
 #box6 {
   display: flex;
@@ -485,6 +513,51 @@ div .card h3 {
 }
 
 #box6 p {
-  border-top: solid #c78c06 2px;
+  border-top: solid #c78c06 3px;
   padding-top: 20px;
+}
+
+/* Styling Form */
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+#message {
+  height: 150px;
+}
+
+/* Styling Table */
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 40px;
+  padding: 15px;
+  background-color: #ffe6ac;
+}
+
+td {
+  text-align: center;
+  padding: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #222;
+}
+
+/* Map */
+
+.map iframe {
+  width: 100%;
 }
