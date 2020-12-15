@@ -402,7 +402,7 @@ div.box1 {
 #box2 {
   background: url('../images/main-banner.jpg');
   justify-content: center;
-  height: 700px;
+  height: 850px;
   display: flex;
   align-items: center;
 }
@@ -560,4 +560,17 @@ td {
 
 .map iframe {
   width: 100%;
+}
+
+/* Footer */
+
+footer .container4 {
+  background-color: #222;
+  height: 100px;
+  color: #c78c06;
+  padding-top: 10px;
+}
+
+footer .container4 a {
+  color: #c78c06;
 }
