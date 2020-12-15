@@ -402,7 +402,7 @@ div.box1 {
 #box2 {
   background: url('../images/main-banner.jpg');
   justify-content: center;
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: center;
 }
