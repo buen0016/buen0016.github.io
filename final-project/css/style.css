@@ -187,7 +187,7 @@ img {
 .superbox {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 header {
@@ -220,10 +220,14 @@ h3 {
 p,
 a {
   font-size: 1.25rem;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .subtitle {
   font-size: 24px;
+}
+
+.textbutton {
+  font-size: 18px;
 }
 
 /* ---------------------------------
@@ -242,6 +246,7 @@ a {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  border-radius: 3px;
 }
 
 .btn1:hover {
@@ -271,7 +276,7 @@ div.btn1 i {
   margin: 10px 10px;
   text-align: center;
   line-height: 90px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .btn2:hover {
@@ -292,15 +297,14 @@ div.btn2 i {
 
 .btn3 {
   width: 250px;
-  height: 90px;
-  font-size: 18px;
+  height: 95px;
   color: white;
   background: #222;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  line-height: 90px;
-  border-radius: 5px;
+  line-height: 95px;
+  border-radius: 3px;
   border: solid #c78c06 2px;
   margin-bottom: 5px;
 }
@@ -319,6 +323,7 @@ div.btn3 i {
   margin-right: 20px;
 }
 
+/* Button Send Form */
 button {
   background-color: #222;
   color: #c78c06;
@@ -326,11 +331,12 @@ button {
   width: 120px;
   padding: 12px 0;
   margin-top: 5px;
-  border-radius: 5px;
+  border-radius: 3px;
+  font-size: 1.2em;
 }
 
 button:hover {
-  background-color: lightgray;
+  opacity: 60%;
 }
 
 /* ---------------------------------
@@ -386,8 +392,8 @@ div.box1 {
   font-size: 1.5em;
   width: 95%;
   background: white;
-  margin: 5px;
-  border-radius: 5px;
+  margin: 1px;
+  border-radius: 3px;
 }
 
 .main-nav button {
@@ -397,8 +403,7 @@ div.box1 {
   border: 1px solid #c78c06;
   background-color: #222;
   margin: 2px;
-  border-radius: 5px;
-  /* text-align: center; */
+  border-radius: 3px;
 }
 
 .im im-magnifier {
@@ -451,16 +456,20 @@ div .btn1 {
   z-index: 10;
 }
 
-/* -- Box3 / Container / image1  + content1  */
+/* -- Responsive - About Us  */
 
 #box3 {
   background-color: #ffe6ac;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.box3-container3 {
-  padding: 10px;
+.content1 {
+  padding: 12px;
 }
+
+/* .box3-container3 { 
+  padding: 10px;
+} */
 
 /* Styling Box 4 */
 
@@ -470,6 +479,7 @@ div .btn1 {
   background-color: #ffe6ac;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 12px;
 }
 
 div .card h3 {
@@ -505,7 +515,7 @@ div .card h3 {
   margin-bottom: 20px;
 }
 
-#box6 div .box6-container2 {
+#box6 div .box6-content2 {
   padding: 10px;
 }
 
@@ -514,7 +524,7 @@ div .card h3 {
   color: #222;
 }
 
-#box6 .box6-container2 h3 {
+#box6 .box6-content2 h3 {
   font-weight: bold;
   font-size: 28px;
   color: #222;
@@ -588,4 +598,234 @@ footer .container4 {
 
 footer .container4 a {
   color: #c78c06;
+}
+
+/* ---------------------------------
+          Desktop Style
+------------------------------------ */
+
+/* Final CSS 
+
+Create a separate folder for your CSS file
+Add CSS reset code in the start of the file
+Mobile-first approach in the styling
+The maximum width of the container is 1200px
+Add media query for the screen size of 760px and above
+Use the 'Open Sans' Google font for the webpage
+Colours values used in the layout #c78c06, #ffe6ac, #222 and white
+Use of CSS Grid properties for a minimum of one element
+Use of CSS Flexbox properties for a minimum of one element 
+Follow proper folder structure and naming conventions
+CSS has code comments 
+CSS code is valid
+CSS is properly formatted
+Proper link to GitHub Pages site submitted
+Overall design and match with the provided mockup
+
+*/
+
+/* ---------------------------------
+          Desktop Custom Styles
+------------------------------------ */
+@media screen and (min-width: 760px) {
+  a {
+    font-size: 1rem;
+  }
+
+  /* ---------------------------------
+          Content
+------------------------------------ */
+
+  /* ------ Menu ------- */
+
+  .main-nav ul.nav-list {
+    display: flex;
+    height: 150px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-nav ul li div.search {
+    padding: 10px;
+    width: 300px;
+    border-radius: 3px;
+  }
+
+  .main-nav ul.nav-list li.logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav-list ul.nav-list li {
+    flex: 1;
+    width: 100px;
+  }
+
+  /* ------ Search Botton ------ */
+
+  .nav-list a,
+  .nav-list a:link,
+  .nav-list a:visited {
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  .main-nav button {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* ------ Desktop: Welcome ------- */
+
+  #box2 {
+    justify-content: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+  }
+
+  div .box2-container {
+    position: relative;
+    background: none;
+    width: 90%;
+    padding: 20px;
+  }
+  div .box2-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #222;
+    opacity: 80%;
+    width: 100%;
+  }
+
+  /* ------ Desktop: About us ------ */
+
+  #box3 {
+    padding-top: 6px;
+  }
+
+  .box3-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    /* border: 1px solid #222; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0px;
+  }
+
+  #box3 .box3-container3 div.image1,
+  #box3 .box3-container3 div.content1 {
+    flex: 1;
+  }
+
+  #box3 .box3-container3 div.image1 {
+    /* border: solid 1px #222; */
+    align-items: left;
+  }
+
+  #box3 .box3-container3 .content1 {
+    /* border: solid 1px #222; */
+    align-items: left;
+    margin-left: 6px;
+    padding: 0px;
+  }
+
+  /* ------ Desktop: Our Services ------ */
+
+  #box4 div.container4 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+  }
+
+  .container4 > div.card:nth-child(1) {
+    grid-column: 1/4;
+  }
+  .container4 > div.card:nth-child(2) {
+    grid-column: 4/7;
+  }
+
+  .container4 > div.card:nth-child(3) {
+    grid-column: 1/3;
+  }
+
+  .container4 > div.card:nth-child(4) {
+    grid-column: 3/5;
+  }
+
+  .container4 > div.card:nth-child(5) {
+    grid-column: 5/7;
+  }
+  .card {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn2 {
+    width: 100%;
+  }
+
+  /* ------- Desktop: Our Vision ------- */
+
+  #box5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 12px;
+  }
+
+  #box5 .box5-container p {
+    margin-bottom: 30px;
+  }
+
+  /* ------- Desktop: Our Team ------- */
+
+  #box6 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #box6 .box6-container1,
+  #box6 .box6-container2 {
+    flex: 1;
+  }
+
+  .box6-container2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box6-container2 div.image2,
+  .box6-container2 div.box6-content2,
+  .box6-container1 div.image2,
+  .box6-container2 div.box6-content1 {
+    height: 395px;
+  }
+
+  #box7 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form,
+  .map {
+    flex: 1;
+    padding: 6px;
+  }
+
+  .map iframe {
+    height: 450px;
+  }
 }

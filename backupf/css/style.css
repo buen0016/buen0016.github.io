@@ -1,0 +1,623 @@
+/* Final CSS 
+
+Create a separate folder for your CSS file
+Add CSS reset code in the start of the file
+Mobile-first approach in the styling
+The maximum width of the container is 1200px
+Add media query for the screen size of 760px and above
+Use the 'Open Sans' Google font for the webpage
+Colours values used in the layout #c78c06, #ffe6ac, #222 and white
+Use of CSS Grid properties for a minimum of one element
+Use of CSS Flexbox properties for a minimum of one element 
+Follow proper folder structure and naming conventions
+CSS has code comments 
+CSS code is valid
+CSS is properly formatted
+Proper link to GitHub Pages site submitted
+Overall design and match with the provided mockup
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------
+          Custom Styles
+------------------------------------ */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.superbox {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+header {
+  display: inline-block;
+}
+
+/* ---------------------------------
+          Font Sizing
+------------------------------------ */
+
+/* Modular Scale https://www.modularscale.com/?1&rem&1.5 */
+
+h1 {
+  font-size: 5.063rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.375rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+p,
+a {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+.subtitle {
+  font-size: 24px;
+}
+
+/* ---------------------------------
+          Buttons
+------------------------------------ */
+
+/* Button 1 */
+
+.btn1 {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #222;
+  background: #c78c06;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+
+div.btn1 a {
+  color: #222;
+  text-decoration: none;
+}
+
+div.btn1 i {
+  color: #222;
+  margin-right: 20px;
+}
+
+/* Button 1 */
+
+.btn2 {
+  width: 250px;
+  height: 90px;
+  font-size: 18px;
+  color: white;
+  background: #222;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 10px 10px;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 5px;
+}
+
+.btn2:hover {
+  opacity: 0.8;
+}
+
+div.btn2 a {
+  color: white;
+  text-decoration: none;
+}
+
+div.btn2 i {
+  color: white;
+  margin-right: 20px;
+}
+
+/* Button 3 */
+
+.btn3 {
+  width: 250px;
+  height: 90px;
+  font-size: 18px;
+  color: white;
+  background: #222;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 5px;
+  border: solid #c78c06 2px;
+  margin-bottom: 5px;
+}
+
+.btn3:hover {
+  opacity: 0.8;
+}
+
+div.btn3 a {
+  color: white;
+  text-decoration: none;
+}
+
+div.btn3 i {
+  color: white;
+  margin-right: 20px;
+}
+
+/* Button Send Form */
+button {
+  background-color: #222;
+  color: #c78c06;
+  border: 1px solid;
+  width: 120px;
+  padding: 12px 0;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+button:hover {
+  opacity: 60%;
+}
+
+/* ---------------------------------
+          Header - Nav Bar
+------------------------------------ */
+
+div.box1 {
+  background-color: #222;
+}
+
+/* Logo */
+.logo {
+  background-color: #c78c06;
+}
+
+.imagelogo {
+  max-width: 100px;
+}
+
+/* Navigation */
+
+.nav-list a {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+  display: block;
+  padding: 0.4em 0;
+  text-decoration: none;
+  color: #c78c06;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+  background-color: #c78c06;
+  color: inherit;
+}
+
+.main-nav ul li div.search {
+  padding: 10px;
+}
+
+.box-search {
+  display: flex;
+  align-items: center;
+}
+.main-nav input[type='text'] {
+  padding: 5px 14px;
+  font-size: 1.5em;
+  width: 95%;
+  background: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.main-nav button {
+  width: 42px;
+  height: 42px;
+  color: #c78c06;
+  border: 1px solid #c78c06;
+  background-color: #222;
+  margin: 2px;
+  border-radius: 5px;
+  /* text-align: center; */
+}
+
+.im im-magnifier {
+  color: #c78c06;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ---------------------------------
+          Content
+------------------------------------ */
+
+/* ------ Styling Box 2: Image / container1 / h1 / p / Button */
+
+#box2 {
+  background: url('../images/main-banner.jpg');
+  justify-content: center;
+  height: 850px;
+  display: flex;
+  align-items: center;
+}
+
+div .box2-container {
+  position: relative;
+  background: none;
+  width: 100%;
+  padding: 20px;
+}
+
+div .box2-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #222;
+  opacity: 80%;
+  width: 100%;
+}
+
+div .box2-content {
+  color: white;
+  position: relative;
+  margin-bottom: 25px;
+  z-index: 10;
+}
+
+div .btn1 {
+  position: relative;
+  z-index: 10;
+}
+
+/* -- Box3 / Container / image1  + content1  */
+
+#box3 {
+  background-color: #ffe6ac;
+  margin-bottom: 20px;
+}
+
+.box3-container3 {
+  padding: 10px;
+}
+
+/* Styling Box 4 */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe6ac;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+div .card h3 {
+  margin: 10px;
+}
+
+/* Styling Box 5 */
+
+#box5 {
+  background: url('../images/vision.jpg');
+  height: 330px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#box5 .box5-container {
+  margin: 10px;
+}
+
+#box5 div.box5-container h3,
+#box5 div.box5-container p {
+  color: white;
+}
+
+/* Styling Box 6 */
+
+#box6 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe6ac;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#box6 div .box6-container2 {
+  padding: 10px;
+}
+
+#box6 h2 {
+  font-weight: bold;
+  color: #222;
+}
+
+#box6 .box6-container2 h3 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #222;
+}
+
+#box6 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #222;
+}
+
+#box6 p {
+  border-top: solid #c78c06 3px;
+  padding-top: 20px;
+}
+
+/* Styling Form */
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+#message {
+  height: 150px;
+}
+
+/* Styling Table */
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 40px;
+  padding: 15px;
+  background-color: #ffe6ac;
+}
+
+td {
+  text-align: center;
+  padding: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #222;
+}
+
+/* Map */
+
+.map iframe {
+  width: 100%;
+  height: 600px;
+}
+
+/* Footer */
+
+footer .container4 {
+  background-color: #222;
+  height: 100px;
+  color: #c78c06;
+  padding-top: 10px;
+}
+
+footer .container4 a {
+  color: #c78c06;
+}
+
+/* ---------------------------------
+          Desktop Style
+------------------------------------ */
+
+/* Final CSS 
+
+Create a separate folder for your CSS file
+Add CSS reset code in the start of the file
+Mobile-first approach in the styling
+The maximum width of the container is 1200px
+Add media query for the screen size of 760px and above
+Use the 'Open Sans' Google font for the webpage
+Colours values used in the layout #c78c06, #ffe6ac, #222 and white
+Use of CSS Grid properties for a minimum of one element
+Use of CSS Flexbox properties for a minimum of one element 
+Follow proper folder structure and naming conventions
+CSS has code comments 
+CSS code is valid
+CSS is properly formatted
+Proper link to GitHub Pages site submitted
+Overall design and match with the provided mockup
+
+*/
+
+@media screen and (min-width: 600px) {
+  body {
+    display: none;
+  }
+}
