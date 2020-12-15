@@ -727,14 +727,8 @@ Overall design and match with the provided mockup
     flex: 1;
   }
 
-  #box3 .box3-container3 div.image1 {
-    /* border: solid 1px #222; */
-    align-items: left;
-  }
-
   #box3 .box3-container3 .content1 {
     /* border: solid 1px #222; */
-    align-items: left;
     margin-left: 6px;
     padding: 0px;
   }
@@ -826,6 +820,6 @@ Overall design and match with the provided mockup
   }
 
   .map iframe {
-    height: 450px;
+    height: 40px;
   }
 }
