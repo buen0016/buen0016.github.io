@@ -598,6 +598,7 @@ footer .container4 {
 
 footer .container4 a {
   color: #c78c06;
+  font-size: 1em;
 }
 
 /* ---------------------------------
@@ -820,6 +821,10 @@ Overall design and match with the provided mockup
   }
 
   .map iframe {
-    height: 400px;
+    height: 390px;
+  }
+
+  footer div.container4 {
+    padding: 12px;
   }
 }
