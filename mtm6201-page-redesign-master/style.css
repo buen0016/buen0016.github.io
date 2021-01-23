@@ -207,6 +207,7 @@ p {
   font-size: 1.25rem;
   line-height: 2;
   max-width: 90%;
+  position: relative;
 }
 
 /* ---------------------------------
