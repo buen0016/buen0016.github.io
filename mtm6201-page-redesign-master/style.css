@@ -188,6 +188,7 @@ h1 {
   font-size: 5.063rem;
   font-weight: bold;
   text-align: center;
+  position: relative;
 }
 
 h2 {
