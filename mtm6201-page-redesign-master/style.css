@@ -263,7 +263,7 @@ section {
 .home {
   background-color: #a3e7fc;
   border-radius: 20px;
-  height: 400px;
+  height: 420px;
   max-width: 90%;
   padding: 20px;
   position: absolute;
@@ -311,7 +311,7 @@ Styling contact - form.
 
 .contact p {
   max-width: 80%;
-  padding: 30px;
+  padding: 20px;
 }
 
 .contact-form {
@@ -320,7 +320,7 @@ Styling contact - form.
   margin-bottom: 60px;
   width: 90%;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 input[type='text'],
@@ -344,7 +344,6 @@ button {
   border: none;
   width: 100%;
   padding: 12px 0;
-
   border-radius: 5px;
   font-size: 1.2em;
   align-self: center;
