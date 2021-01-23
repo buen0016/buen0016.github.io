@@ -307,6 +307,7 @@ Styling contact - form.
 .contact {
   background-color: #a3e7fc;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .contact p {
@@ -317,7 +318,6 @@ Styling contact - form.
 .contact-form {
   background-color: #553a41;
   flex-direction: column;
-  margin-bottom: 60px;
   width: 90%;
   padding: 20px;
   border-radius: 20px;
@@ -359,12 +359,11 @@ button:hover {
 
 footer {
   background-color: #553a41;
-  height: 100px;
+  width: 100%;
 }
 
 footer p {
   color: #fff;
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 25px;
 }
