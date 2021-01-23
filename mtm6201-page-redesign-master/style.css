@@ -1,0 +1,355 @@
+/* Re - Design CSS 
+
+Objective
+Use what you have learned about CSS and web design to improve the design of the provided web page. The redesigned page should be optimized for multiple screen sizes, browsers, and devices. It should also be visually appealing and fulfil the general requirements of the assignment.
+
+#Requirements.
+The following requirements must be met in order to complete the assignment successfully:
+
+Download the Page Redesign starter files. Inside the starter files will be index.html, base.css, style.css and images folder.
+All the changes must be made to the style.css file. Do NOT change the index.html or base.css.
+The CSS should be valid and well formatted.
+The CSS should use the minimal specificity required to override the base styles. Do NOT use !important
+Comments should be provide in the CSS explaining what your code does and why you chose to use it.
+The redesigned page should respond to different screen sizes.
+The redesigned page should be functional and visually appealing across multiple browsers. At the least on Chrome, FireFox and Safari.
+#Rubric
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------
+          Custom Styles
+------------------------------------ */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+/* ---------------------------------
+Styling fonts based on: Modular Scale https://www.modularscale.com/
+------------------------------------ */
+
+h1 {
+  font-size: 5.063rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.375rem;
+  font-weight: bold;
+}
+
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 2;
+  max-width: 90%;
+}
+
+/* ---------------------------------
+Styling Nav Bar : 3 Modules
+------------------------------------ */
+
+.nav {
+  background-color: #553a41;
+  text-align: center;
+  font-size: 1.5em;
+  height: 400px;
+  padding: 50px;
+  z-index: -2;
+  position: absolue;
+}
+
+.nav .nav-link {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  display: block;
+  padding: 0.4em 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a.current {
+  font-size: 1.6rem;
+  color: #a3e7fc;
+}
+
+/* ---------------------------------
+Welcome Banner
+------------------------------------ */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  background-color: #a3e7fc;
+  border-radius: 30px;
+  height: 300px;
+  max-width: 90%;
+  padding: 20px;
+  position: absolute;
+  top: 300px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------
+Adjusting Image Coming out the box
+------------------------------------ */
+
+.about {
+  max-width: 90%;
+  border: solid 1px #553a41;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+.about-image {
+  background-color: #553a41;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.img {
+  max-width: 80%;
+  justify-content: center;
+}
+
+/* ---------------------------------
+Styling contact - form.
+------------------------------------ */
+
+.contact {
+  background-color: #a3e7fc;
+  padding: 20px;
+}
+
+.contact p {
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #553a41;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 15px;
+  border-radius: 5px;
+  border: none;
+}
+#message {
+  height: 150px;
+}
+
+button {
+  background-color: #26c485;
+  color: #553a41;
+  border: 1px solid;
+  width: 90%;
+  padding: 12px 0;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 60%;
+}
+
+footer {
+  background-color: #553a41;
+  height: 100px;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
