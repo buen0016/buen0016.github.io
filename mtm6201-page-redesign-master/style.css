@@ -306,7 +306,7 @@ Styling contact - form.
 
 .contact {
   background-color: #a3e7fc;
-  width: 120%;
+  width: 100%;
 }
 
 .contact p {
@@ -318,7 +318,7 @@ Styling contact - form.
   background-color: #553a41;
   flex-direction: column;
   margin-bottom: 60px;
-  width: 600px;
+  width: 90%;
   padding: 20px;
   border-radius: 25px;
 }
