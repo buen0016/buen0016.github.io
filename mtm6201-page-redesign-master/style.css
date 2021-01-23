@@ -194,6 +194,8 @@ h1 {
 h2 {
   font-size: 3.375rem;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -220,7 +222,7 @@ Styling Nav Bar : 3 Modules
   background-color: #553a41;
   text-align: center;
   font-size: 1.5em;
-  height: 400px;
+  height: 500px;
   padding: 50px;
   z-index: -2;
   position: absolue;
@@ -260,7 +262,7 @@ section {
 
 .home {
   background-color: #a3e7fc;
-  border-radius: 30px;
+  border-radius: 20px;
   height: 400px;
   max-width: 90%;
   padding: 20px;
@@ -282,15 +284,15 @@ Adjusting Image Coming out the box
 .about {
   max-width: 90%;
   border: solid 1px #553a41;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 20px;
-  margin-top: 370px;
+  margin-top: 290px;
   margin-bottom: 50px;
 }
 .about-image {
   background-color: #553a41;
   width: 300px;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .img {
@@ -304,29 +306,33 @@ Styling contact - form.
 
 .contact {
   background-color: #a3e7fc;
-  padding: 20px;
+  width: 120%;
 }
 
 .contact p {
   max-width: 80%;
-  margin-bottom: 20px;
+  padding: 30px;
 }
 
 .contact-form {
   background-color: #553a41;
-  display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
+  width: 600px;
+  padding: 20px;
+  border-radius: 25px;
 }
 
 input[type='text'],
 input[type='email'],
 textarea {
-  width: 90%;
+  width: 100%;
   padding: 10px;
-  box-sizing: border-box;
-  margin: 15px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: none;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 15px;
 }
 #message {
   height: 150px;
@@ -335,15 +341,19 @@ textarea {
 button {
   background-color: #26c485;
   color: #553a41;
-  border: 1px solid;
-  width: 90%;
+  border: none;
+  width: 100%;
   padding: 12px 0;
-  margin-top: 5px;
+
   border-radius: 5px;
   font-size: 1.2em;
-  align-items: center;
+  align-self: center;
 }
-
+label {
+  font-size: 1.25rem;
+  color: white;
+  margin: 10px 0 10px 0;
+}
 button:hover {
   opacity: 60%;
 }
@@ -356,4 +366,6 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
+  font-size: 1rem;
+  margin-bottom: 25px;
 }
