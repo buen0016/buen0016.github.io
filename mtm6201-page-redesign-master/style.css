@@ -208,6 +208,8 @@ p {
   line-height: 2;
   max-width: 90%;
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* ---------------------------------
@@ -282,7 +284,7 @@ Adjusting Image Coming out the box
   border: solid 1px #553a41;
   border-radius: 25px;
   padding: 20px;
-  margin-top: 250px;
+  margin-top: 370px;
   margin-bottom: 50px;
 }
 .about-image {
