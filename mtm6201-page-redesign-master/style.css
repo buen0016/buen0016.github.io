@@ -209,7 +209,6 @@ p {
   font-size: 1.25rem;
   line-height: 2;
   max-width: 90%;
-  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -224,8 +223,6 @@ Styling Nav Bar : 3 Modules
   font-size: 1.5em;
   height: 500px;
   padding: 50px;
-  z-index: -2;
-  position: absolue;
 }
 
 .nav .nav-link {
@@ -246,11 +243,11 @@ Styling Nav Bar : 3 Modules
 .nav a:focus,
 .nav a.current {
   font-size: 1.6rem;
-  color: #a3e7fc;
+  color: #26c485;
 }
 
 /* ---------------------------------
-Welcome Banner
+Welcome Banner: Overlaping the nav bar
 ------------------------------------ */
 
 section {
@@ -277,6 +274,10 @@ main {
   justify-content: center;
 }
 
+.home p {
+  font-weight: bold;
+}
+
 /* ---------------------------------
 Adjusting Image Coming out the box
 ------------------------------------ */
@@ -290,7 +291,7 @@ Adjusting Image Coming out the box
   margin-bottom: 50px;
 }
 .about-image {
-  background-color: #553a41;
+  background-color: #26c485;
   width: 300px;
   border-radius: 20px;
 }
@@ -353,8 +354,9 @@ label {
   color: white;
   margin: 10px 0 10px 0;
 }
-button:hover {
-  opacity: 60%;
+button:hover,
+button:focus {
+  background-color: #a3e7fc;
 }
 
 footer {
@@ -364,6 +366,92 @@ footer {
 
 footer p {
   color: #fff;
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
+  padding-left: 150px;
+}
+
+/* ---------------------------------
+          Desktop Style
+------------------------------------ */
+
+@media screen and (min-width: 760px) {
+  .nav {
+    display: flex;
+    padding-left: 170px;
+    height: 400px;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 420px;
+    max-width: 90%;
+    top: 180px;
+  }
+  .home h1,
+  .home p {
+    align-self: flex-start;
+    margin-left: 70px;
+  }
+
+  .nav a:hover,
+  .nav a:focus,
+  .nav a.current {
+    border-top: solid 2px #26c485;
+    color: #26c485;
+  }
+
+  .section-title {
+    grid-area: main;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  .about-image {
+    grid-area: sidebar;
+    justify-self: left;
+    max-width: 250px;
+    margin-left: 60px;
+  }
+
+  section p:nth-child(1) {
+    grid-area: footer;
+    align-self: start;
+  }
+
+  .about {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'main main main'
+      'sidebar . footer2';
+  }
+
+  .contact .section-title {
+    grid-area: main;
+    margin-left: 160px;
+  }
+
+  .contact p {
+    grid-area: text;
+    margin-left: 150px;
+  }
+
+  .contact-form {
+    grid-area: form;
+  }
+
+  .contact {
+    display: grid;
+    padding: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'main form'
+      'text form';
+  }
 }
