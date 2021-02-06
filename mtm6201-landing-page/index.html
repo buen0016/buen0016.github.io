@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Dash</title>
+
+    <!-- It is required to have Monserrat Family: Bold, Medium and Regular, no fallback_font defined in the requiremnt -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/132adbd1a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="mainbox">
+
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="logo" class="imagelogo">
+            </div>
+        
+            <div class="info">
+                <h1>Want to be your own boss?</h1>
+                <h3>Start today and make up to $30/hr driving your own vehicle with dash</p>
+            </div>
+        
+            <div class="scooter">
+                <img src="images/bg-image/scooter.svg" alt="Background" class="bg-scooter">
+            </div>
+
+        </div>
+
+        <div class="contact">
+            <h2>Apply Now</h2>
+
+            <p>Enter your info below</p>
+
+            <div>
+                <input
+                placeholder="First Name"
+                type="text"
+                id="firstname"
+                name="fullname" required/>            
+            </div>
+            <div>
+                <input 
+                type="text"
+                id="lasttname"
+                placeholder="Last Name"
+                name="fullname" required/>            
+            </div>
+            <div>
+                <input 
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="phone" required/>            
+            </div>
+            <div>
+                <input 
+                type="email"
+                id="email"
+                placeholder="Email address"
+                name="email" required/>            
+            </div>
+            
+            <div>
+            <input 
+                type="checkbox" id="cbox1" value="first_checkbox"> <label>I agree to dash terms</label>
+            </div>
+            <button 
+                type="submit" value="send" class="btn1">DRIVE WITH US</button>
+                <p>Already applied? <a href="url">Check your application status here</a></p>
+        </div>
+    </div>
+    <footer>
+            <h4>See how much you can earn with Dash</h4>
+            <p>how many hours do you want to drive with us this week?</p>
+        <div>
+            <input 
+            type="number"
+            id="hours"
+            placeholder="hours"
+            name="email" required/>            
+        </div>
+        <div>
+            <input 
+            type="text"
+            id="city"
+            placeholder="city"
+            name="city" required/>            
+        </div>
+        <button type="submit" value="send" class="btn2">Calculate</button>
+    
+        <!-- The order of icons change for desktop version -->
+    <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+</footer>
+    
+</body>
+</html>

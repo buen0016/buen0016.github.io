@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------
+          Custom Styles
+------------------------------------ */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #f7f7ff;
+}
+
+.content {
+  padding: 25px 36px 25px;
+}
+
+/* Color font is standarized for all document, except for links */
+h1,
+h2,
+h3,
+p {
+  color: #333131;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: regular;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p,
+label {
+  font-size: 16px;
+  font-weight: regular;
+}
+
+a {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+.logo img {
+  width: 114.73px;
+}
+
+.contact {
+  background-color: #fff;
+  box-shadow: #333131;
+  width: 100%;
+  padding: 15px 35px 24px;
+  margin: 11px auto;
+  border-radius: 26px;
+  box-shadow: 5px 10px 15px;
+  width: 300px;
+  opacity: 1;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #f4f4f5;
+  border-radius: 11px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+[type='checkbox']:not(:checked),
+[type='checkbox']:checked {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #333131;
+}
+
+.btn1 {
+  background-color: #57eeab;
+  border-radius: 11px;
+  border: none;
+  height: 55px;
+  width: 100%;
+  font-size: 24px;
+  align-self: center;
+  font-weight: bold;
+  margin: 18px 0px 15px;
+}
+
+footer {
+  background-color: #fffd8c;
+  padding: 22px 37px 21.34px;
+}
+
+footer p {
+  font-weight: regular;
+}
