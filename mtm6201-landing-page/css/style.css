@@ -259,3 +259,49 @@ footer {
 footer p {
   font-weight: regular;
 }
+
+.simulator {
+  display: flex;
+  flex-direction: row;
+}
+
+.simulator input[type='text'],
+.simulator input[type='number'],
+textarea {
+  padding: 10px;
+  background-color: #f4f4f5;
+  border-radius: 11px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: none;
+  height: 40px;
+}
+
+.simulator input[type='number'],
+textarea {
+  flex-grow: 1;
+}
+
+.simulator input[type='text'],
+textarea {
+  flex-grow: 3;
+}
+
+.btn2 {
+  background-color: #ff8480;
+  border-radius: 11px;
+  border: none;
+  height: 40px;
+  width: 100%;
+  font-size: 24px;
+  align-self: center;
+  font-weight: bold;
+  margin: 5px 0px 15px;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
