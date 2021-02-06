@@ -164,6 +164,7 @@ p {
 ::placeholder {
   color: #9b9b9b;
   font-size: 16px;
+  font-weight: bold;
 }
 
 h1 {
@@ -173,12 +174,12 @@ h1 {
 
 h2 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 24px;
-  font-weight: regular;
+  font-weight: bold;
 }
 
 h4 {
@@ -189,7 +190,7 @@ h4 {
 p,
 label {
   font-size: 16px;
-  font-weight: regular;
+  font-weight: 600;
 }
 
 a {
@@ -217,6 +218,11 @@ a {
   border-radius: 26px;
   box-shadow: 5px 10px 15px;
   opacity: 1;
+}
+
+.contact p {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 input[type='text'],
@@ -263,28 +269,31 @@ footer p {
 .simulator {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.simulator input[type='text'],
 .simulator input[type='number'],
+.simulator input[type='text'],
 textarea {
   padding: 10px;
-  background-color: #f4f4f5;
+  background-color: #f7f7ff;
   border-radius: 11px;
   margin-top: 6px;
   margin-bottom: 15px;
-  border: none;
   height: 40px;
+  border: none;
 }
 
 .simulator input[type='number'],
 textarea {
-  flex-grow: 1;
+  width: 68px;
+  /* margin-right: 5px; */
 }
 
 .simulator input[type='text'],
 textarea {
-  flex-grow: 3;
+  width: 225px;
 }
 
 .btn2 {
