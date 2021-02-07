@@ -214,6 +214,9 @@ a {
 .logo img {
   width: 114.73px;
 }
+.textbox {
+  width: 300px;
+}
 
 .contact {
   background-color: #fff;
@@ -409,15 +412,15 @@ textarea {
   .bg-scooter {
     display: none;
   }
-  .content {
+  img.imagelogo {
+    margin-left: 40px;
+  }
+  .table {
     background: url('../images/bg-image/scooter.svg') no-repeat 50% 50%;
-    background-size: 800px 800px;
+    background-size: 644px 800px;
     background-position: center;
     margin-left: 40px;
     margin-right: 40px;
-  }
-
-  .table {
     display: grid;
     grid-template-columns: 530px 1fr;
     grid-row: 1fr 1fr;
