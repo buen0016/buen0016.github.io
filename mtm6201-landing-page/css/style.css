@@ -409,6 +409,11 @@ textarea {
 /* Large sizes Screens */
 
 @media screen and (min-width: 1025px) {
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
   .bg-scooter {
     display: none;
   }
@@ -422,8 +427,8 @@ textarea {
     margin-left: 40px;
     margin-right: 40px;
     display: grid;
-    grid-template-columns: 530px 1fr;
-    grid-row: 1fr 1fr;
+    grid-template-columns: 500px 1fr;
+    grid-row: 1fr 1fr;30
   }
 
   .contact {
