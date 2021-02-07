@@ -272,6 +272,13 @@ li > input {
   align-self: center;
   font-weight: bold;
   margin: 18px 0px 15px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.btn1:hover {
+  background-color: #57eeab;
+  opacity: 0.7; /* Green */
 }
 
 footer {
@@ -323,6 +330,13 @@ textarea {
   font-weight: bold;
   margin: 5px 0px 38px;
   color: #fff;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.btn2:hover {
+  background-color: #ff8480;
+  opacity: 0.7; /* Green */
 }
 
 .social {
@@ -338,10 +352,14 @@ textarea {
 
 /* Medium sizes Screens */
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .contact {
     width: 605px;
     margin-top: 20px;
+  }
+
+  footer {
+    width: 100%;
   }
 
   .footercontent {
@@ -387,7 +405,7 @@ textarea {
 
 /* Large sizes Screens */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bg-scooter {
     display: none;
   }
@@ -395,6 +413,8 @@ textarea {
     background: url('../images/bg-image/scooter.svg') no-repeat 50% 50%;
     background-size: 800px 800px;
     background-position: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .table {
