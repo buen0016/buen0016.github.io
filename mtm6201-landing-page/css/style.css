@@ -146,8 +146,12 @@ html {
 body {
   line-height: 1.2;
   background-color: #f7f7ff;
-  /* max-width: 1200px; */
-}
+  }
+
+ .full{
+  max-width: 1200px;
+  margin: 0 auto;
+ } 
 
 .content {
   padding: 25px 36px 25px;
@@ -440,6 +444,8 @@ textarea {
   }
 
   footer {
+    width: 100%;
+    margin: 0 auto;
     display: grid;
     align-content: end;
     justify-content: center;
