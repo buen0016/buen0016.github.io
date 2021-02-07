@@ -146,12 +146,12 @@ html {
 body {
   line-height: 1.2;
   background-color: #f7f7ff;
-  }
+}
 
- .full{
-  max-width: 1200px;
+.full {
+  max-width: 1640px;
   margin: 0 auto;
- } 
+}
 
 .content {
   padding: 25px 36px 25px;
@@ -194,12 +194,6 @@ h4 {
   margin-bottom: 10px;
 }
 
-p,
-label {
-  font-size: 16px;
-  font-weight: 600;
-}
-
 a {
   color: #ff8480;
   text-decoration: none;
@@ -224,7 +218,6 @@ a {
 
 .contact {
   background-color: #fff;
-  box-shadow: #333131;
   width: 300px;
   padding: 15px 25px 24px;
   margin: 11px auto 40px;
@@ -256,17 +249,15 @@ input[type='checkbox'] {
   vertical-align: middle;
 }
 
-#checkbox {
-  width: 80px;
-}
-
-li {
-  list-style: none;
-}
-
-li > input {
+input {
   height: 25px;
   width: 25px;
+}
+
+p,
+label {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .btn1 {
@@ -294,7 +285,7 @@ footer {
 }
 
 footer p {
-  font-weight: regular;
+  font-weight: 600;
 }
 
 .simulator {
@@ -353,11 +344,7 @@ textarea {
   margin: auto;
 }
 
-/* ---------------------------------
-          Responsive Layouts
------------------------------------- */
-
-/* Medium sizes Screens */
+/* Medium Sizes Screens */
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .contact {
@@ -413,7 +400,6 @@ textarea {
 /* Large sizes Screens */
 
 @media screen and (min-width: 1025px) {
-
   h1 {
     font-size: 50px;
     font-weight: bold;
@@ -426,13 +412,12 @@ textarea {
   }
   .table {
     background: url('../images/bg-image/scooter.svg') no-repeat 50% 50%;
-    background-size: 644px 800px;
+    background-size: 599px 819px;
     background-position: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: grid;
     grid-template-columns: 500px 1fr;
-    grid-row: 1fr 1fr;30
   }
 
   .contact {
@@ -444,8 +429,6 @@ textarea {
   }
 
   footer {
-    width: 100%;
-    margin: 0 auto;
     display: grid;
     align-content: end;
     justify-content: center;
