@@ -276,12 +276,14 @@ h2 {
 /* Contextual Menu: This menu show the product based on category */
 
 .section-head {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: space-around;
   height: 200px;
+  max-width: 425px;
   background-color: #dbdbdb;
 }
 
@@ -303,15 +305,15 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
-.section-product h3 {
-  margin-bottom: 10px;
+.catalog-product h3 {
+  margin-bottom: 20px;
 }
 
 .catalog-product {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 322px;
   border-color: red 1px solid;
 }
