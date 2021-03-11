@@ -288,7 +288,7 @@ h2 {
 }
 
 .section-head select {
-  background-color: #dbdbdb;
+  background-color: transparent;
   color: #3a243b;
   font-family: roboto;
   font-size: 18px;
