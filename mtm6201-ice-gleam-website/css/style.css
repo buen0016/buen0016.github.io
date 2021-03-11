@@ -294,6 +294,7 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   width: 300px;
+  border: transparent;
   border-bottom: 1px solid #32cd32;
   padding: 10px;
 }
