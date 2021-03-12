@@ -224,6 +224,7 @@ nav {
   display: block;
   padding: 1em 0;
   text-decoration: none;
+  color: #3a243b;
 }
 
 .nav-list a:hover,
