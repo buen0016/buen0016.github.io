@@ -483,6 +483,8 @@ input {
   align-items: center;
   justify-content: space-around;
   height: 414px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .social {
@@ -496,10 +498,11 @@ input {
   width: 255px;
   height: 40px;
   text-align: left;
+  color: #fff;
 }
 
-.footer-down ul li {
-  color: #fff;
+.footer-down li a:link {
+  text-decoration: none;
 }
 
 i {
