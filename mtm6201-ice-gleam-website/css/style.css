@@ -197,6 +197,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .logo {
@@ -233,8 +234,12 @@ nav {
 /* Main banner: The main photo overlap the background */
 
 .banner {
-  border: solid 1px red;
-  height: 650px;
+  height: 700px;
+  position: relative;
+}
+.banner-image {
+  position: relative;
+  height: 200px;
 }
 
 .bimage {
@@ -246,13 +251,13 @@ nav {
 }
 
 .banner-frame {
-  position: absolute;
+  /* position: absolute; */
   top: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 550px;
+  height: 414px;
   width: 100%;
   background-color: #3a243b;
   padding: 30px;
