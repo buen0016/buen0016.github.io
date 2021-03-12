@@ -505,3 +505,13 @@ input {
 i {
   color: #fff;
 }
+
+.footer-down .credits p {
+  color: #fff;
+  font-size: 10px;
+}
+
+.footer-down .credits a {
+  color: #ec663b;
+  font-size: 10px;
+}
