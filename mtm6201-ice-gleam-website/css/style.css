@@ -338,7 +338,7 @@ h2 {
 }
 
 .catalog-product {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   width: 320px;
   border: 3px solid blue;
   position: relative;
@@ -355,12 +355,12 @@ h2 {
   z-index: 1;
   max-width: 146px;
   right: -40px;
-  bottom: 0;
+  bottom: -40px;
   border: 3px solid yellow;
 }
 
 .catalog-product .product-photo {
-  width: 280px;
+  /* width: 200px; */
 }
 
 /* News Letter */
