@@ -138,6 +138,10 @@ html {
   box-sizing: border-box;
 }
 
+.container {
+  margin: auto;
+}
+
 *,
 *::after,
 *::before {
@@ -297,6 +301,11 @@ h2 {
 
 /* Contextual Menu: This menu show the product based on category */
 
+section {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .section-head {
   margin: auto;
   display: flex;
@@ -325,7 +334,9 @@ h2 {
 
 .section-catalog {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin-top: 30px;
@@ -337,7 +348,7 @@ h2 {
 }
 
 .catalog-product {
-  margin-bottom: 60px;
+  margin: 0px 25px 60px 25px;
   width: 320px;
   position: relative;
 }
