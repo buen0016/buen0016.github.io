@@ -330,6 +330,7 @@ h2 {
   justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 30px;
+  border: 3px solid red;
 }
 
 .catalog-product h3 {
@@ -338,12 +339,28 @@ h2 {
 
 .catalog-product {
   margin-bottom: 30px;
-  width: 322px;
-  border-color: red 1px solid;
+  width: 320px;
+  border: 3px solid blue;
+  position: relative;
+}
+
+.product-photo {
+  border: 3px solid green;
+  height: 375px;
+  position: relative;
+}
+
+.ice-photo {
+  position: absolute;
+  z-index: 1;
+  max-width: 146px;
+  right: -40px;
+  bottom: 0;
+  border: 3px solid yellow;
 }
 
 .catalog-product .product-photo {
-  width: 250px;
+  width: 280px;
 }
 
 /* News Letter */
@@ -501,6 +518,7 @@ input {
   color: #fff;
 }
 
+/* As far most browsers use a blue styling color for phones numbers, this style was removed according the mockup   */
 .footer-down li a:link {
   text-decoration: none;
 }
