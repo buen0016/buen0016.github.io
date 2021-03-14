@@ -107,7 +107,7 @@ section {
 }
 body {
   line-height: 1;
-  max-width: 1200px;
+  max-width: 1460px;
   margin: auto;
 }
 ol,
@@ -134,84 +134,83 @@ table {
 
 /* Utilities */
 
+:root {
+  --primary-color: #3a243b;
+  --secondary-color: #8a628c;
+  --light-color: #dbdbdb;
+  --ultralight-color: #ffffff;
+  --third-color: #32cd32;
+  --fourth-color: #565691;
+  --action-color: #ec663b;  
+}
 html {
   font-family: 'Lato';
   font-size: 14px;
   box-sizing: border-box;
 }
-
 *,
 *::after,
 *::before {
   box-sizing: inherit;
   line-height: inherit;
 }
-
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
-
 ul,
 li {
   list-style: none;
 }
-
 img {
   width: 100%;
 }
-
 h1 {
   font-family: 'Lato';
   font-size: 27px;
-  font-weight: bold;
-  color: #fff;
+  font-weight: bolder;
+  color: var(--ultralight-color);
 }
-
 h2 {
   font-family: 'Lato';
   font-size: 24px;
-  color: #fff;
+  color: var(--ultralight-color);
   font-weight: bold;
 }
-
 h3 {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 24px;
-  color: #3a243b;
+  font-size: 27px;
+  color: var(--primary-color);
 }
-
 a {
   font-family: 'lato';
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
 }
-
 p {
   font-family: 'Roboto';
   font-size: 18px;
-  color: #3a243b;
+  color: var(--primary-color);
   line-height: 2rem;
 }
-
 img {
   width: 100%;
 }
-
 .subtitle h3 {
-  color: #32cd32;
+  color: var(--third-color);
 }
 
 /* Components */
-header{
+
+header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
+}
 
 .header-container {
   display: flex;
@@ -220,12 +219,11 @@ header{
   align-items: center;
   margin-bottom: 50px;
   margin-top: 20px;
-  }
-
+}
 .logo {
   max-width: 277px;
   align-self: center;
-  }
+}
 
 /* Navigation */
 
@@ -238,24 +236,21 @@ nav {
   text-align: center;
   width: 277px;
 }
-
 nav ul li:last-child {
   border: none;
 }
-
 .nav-list a,
 .nav-list a:link,
 .nav-list a:visited {
   display: block;
   padding: 1em 0;
   text-decoration: none;
-  color: #3a243b;
+  color: var(--primary-color);
 }
-
 .nav-list a:hover,
 .nav-list a:focus,
 .nav-list a.current {
-  color: #32cd32;
+  color: var(--third-color);
 }
 
 /* Main banner: The main photo offset the background */
@@ -264,7 +259,6 @@ nav ul li:last-child {
   position: relative;
   height: 200px;
 }
-
 .bimage {
   position: absolute;
   z-index: 1;
@@ -272,7 +266,6 @@ nav ul li:last-child {
   transform: translate(-50%, 0);
   width: 180px;
 }
-
 .banner-frame {
   top: 450px;
   display: flex;
@@ -281,10 +274,9 @@ nav ul li:last-child {
   align-items: center;
   height: 414px;
   width: 100%;
-  background-color: #3a243b;
+  background-color: var(--primary-color);
   padding: 30px 0px 30px 0px;
 }
-
 .banner .banner-frame .banner-frame-content {
   width: 320px;
   height: 240px;
@@ -292,31 +284,27 @@ nav ul li:last-child {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .banner-frame h1,
 h2 {
-  color: #fff;
+  color: var(--ultralight-color);
 }
-
-.banner-frame .btn1 {
+.banner-frame .btn1, .flavor-content .btn1 {
   width: 100%;
   height: 42px;
-  background-color: #ec663b;
+  background-color: var(--action-color);
   text-decoration: none;
   border-radius: 10px;
   border: none;
-  color: #fff;
+  color: var(--ultralight-color);
   font-size: 18px;
   font-family: roboto;
 }
-
 /* Contextual Menu: This menu show the product based on category */
 
 section {
   max-width: 1200px;
   margin: auto;
 }
-
 .section-head {
   margin: auto;
   display: flex;
@@ -326,21 +314,18 @@ section {
   justify-content: space-around;
   height: 200px;
   width: 100%;
-  background-color: #fcfcfc;
+  background-color: var(--ultralight-color);
 }
-
 .section-head select {
-  background-color: transparent;
-  color: #3a243b;
+  color: var(--primary-color);
   font-family: roboto;
   font-size: 18px;
   font-weight: bold;
   width: 300px;
   border: transparent;
-  border-bottom: 1px solid #32cd32;
+  border-bottom: 2px solid var(--third-color);
   padding: 10px;
 }
-
 .section-head-highress {
   display: none;
 }
@@ -356,22 +341,18 @@ section {
   margin-top: 40px;
   margin-bottom: 50px;
 }
-
 .catalog-product h3 {
   margin-bottom: 20px;
 }
-
 .catalog-product {
   margin: 0px 25px 60px 25px;
   width: 320px;
   position: relative;
 }
-
 .product-photo {
   height: 375px;
   position: relative;
 }
-
 .ice-photo {
   position: absolute;
   z-index: 1;
@@ -387,17 +368,14 @@ section {
   margin: auto;
   margin-bottom: 40px;
 }
-
 .news-border {
   border-radius: 8px;
   margin: 0px 2px 0px 0px;
 }
-
 .news-image {
   position: relative;
   height: 200px;
 }
-
 .bimage2 {
   position: absolute;
   z-index: 1;
@@ -405,7 +383,6 @@ section {
   transform: translate(-50%, 0);
   width: 180px;
 }
-
 .news-frame {
   top: 400px;
   display: flex;
@@ -414,19 +391,17 @@ section {
   align-items: center;
   height: 400px;
   width: 100%;
-  background-color: #32cd32;
+  background-color:var(--third-color);
   padding: 30px;
   border-radius: 10px;
 }
 
 .news-frame h2 {
-  color: #3a243b;
+  color: var(--primary-color);
 }
-
 .news-frame h2 {
-  color: #fff;
+  color: var(--ultralight-color);
 }
-
 .section-news .news-frame .news-frame-content {
   width: 320px;
   height: 200px;
@@ -434,7 +409,6 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
-
 input {
   width: 322px;
   height: 40px;
@@ -442,19 +416,18 @@ input {
   border: none;
   font-family: roboto;
   font-size: 18px;
-  color: #dbdbdb;
+  color: var(--light-color);
   margin-bottom: 20px;
   text-align: center;
 }
-
 .btn2 {
   width: 100%;
   height: 42px;
-  background-color: #3a243b;
+  background-color: var(--primary-color);
   text-decoration: none;
   border-radius: 10px;
   border: none;
-  color: #fff;
+  color: var(--light-color);
   font-size: 18px;
   font-family: roboto;
 }
@@ -469,14 +442,10 @@ input {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .subtitle {
   text-align: center;
   margin: 30px 0px 30px 0px;
 }
-
-
-
 .post {
   margin-bottom: 30px;
 }
@@ -484,29 +453,24 @@ input {
   margin: auto;
   width: 322px;
 }
-
 .post-content h3 {
   margin-bottom: 10px;
 }
-
 .post-content p a {
   font-size: 18px;
-  color: #ec663b;
+  color: var(--action-color);
 }
-
 .post-img {
   width: 320px;
   margin-bottom: 20px;
 }
-
 .footer-top {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  background-color: #dbdbdb;
+  background-color: var(--light-color);
   padding-top: 30px;
 }
-
 .footer-top-frame {
   display: flex;
   flex-direction: row;
@@ -514,22 +478,20 @@ input {
   align-content: center;
   justify-content: space-between;
   padding-bottom: 30px;
+  margin: 30px;
   max-width: 1200px;
 }
-
 .footer-top .second-nav-content {
-  width: 160px;
+  width: 200px;
   align-items: center;
   margin: 20px 20px 20px 20px;
   align-self: auto;
 }
-
 .footer-top .second-nav-content li {
   margin-top: 5px;
 }
-
 .footer-down {
-  background-color: #3a243b;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,37 +500,32 @@ input {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .social {
   width: 255px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .footer-down li {
   width: 255px;
   height: 40px;
   text-align: left;
-  color: #fff;
+  color: var(--light-color);
 }
 
 /* As far most browsers use a blue styling color for phones numbers, this style was removed according the mockup   */
 .footer-down li a:link {
   text-decoration: none;
 }
-
 i {
-  color: #fff;
+  color: var(--ultralight-color);
 }
-
 .footer-down .credits p {
-  color: #fff;
+  color:var(--ultralight-color);
   font-size: 10px;
 }
-
 .footer-down .credits a {
-  color: #ec663b;
+  color: var(--action-color);
   font-size: 10px;
 }
 
@@ -580,72 +537,82 @@ Setting for higher resolutions
 
 /* Main Menu */
 
-.header-container{
-  width: 100%;
+  .header-container{
+    width: 100%;
     display: grid;
     grid-template-columns: 6% 39% 10% 39% 6%;
   }
-
   .logo{
-    grid-column: 2 / 3;
+      grid-column: 2 / 3;
   }
-
-    nav {
+  nav {
     grid-column: 4 / span 1;
-    }
-
+  }
   ul.nav-list {
-    margin-top: 70px;
     display: flex;
     width: 250px;
-    }
-
-  .nav-list li {
-    
-    border-bottom: none;
+      justify-content: space-between;
+  }
+  .nav-list2 li {
     display: flex;
     flex-direction: row;
     width: 70px;
-    }
-   
-  /* banner styling */
+  }
+        
+    /* banner styling */
 
   .banner-border {
     display: grid;
     max-width: 100%;
     grid-template-columns: 6% 39% 10% 39% 6%;
     grid-template-rows: auto;
-    background-color: #3a243b;
+    background-color: var(--primary-color);
     justify-content: center;
-    height: 262px;
+    height: 280px;
+    padding-top: 10px;
   }
 
-  /* Behaviour of contextual menu */
+    /* Behaviour of contextual menu */
 
   .section-head {
     display: none;
   }
-
   .section-head-highress {
     display: revert;
+    display: flex;
+    align-items: center;
+  }
+  .section-head-highress ul{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
-
-  .section-head-highress ul{
-    border: 2px solid red;
-    width: 500px;    
+  .section-head-highress .nav-list2 li{
+    width: auto;
+    text-align: center;
   }
-
+  .nav-list2 a,
+  .nav-list2 a:link,
+  .nav-list2 a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    color: var(--primary-color);
+  }  
+  .nav-list2 a:hover,
+  .nav-list2 a:focus,
+  .nav-list2 a.current {
+    color: var(--third-color);
+  }
   .banner-frame {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: start;
     justify-self: start;
-    height: 262px;
+    height: 270px;
     padding:0px;
   }
-
   .banner-image {
     grid-column: 4 / 5;
     grid-row: 1/2;
@@ -653,31 +620,28 @@ Setting for higher resolutions
     display: inline-block;
     margin-top: -30px;
   }
-
   .bimage {
     width: 168px;
   }
 
-  /* Mailing List */
+    /* Mailing List */
 
   .news-border {
     display: grid;
     max-width: 100%;
     grid-template-columns: 6% 39% 10% 39% 6%;
     grid-template-rows: auto;
-    background-color: #32cd32;
+    background-color: var(--third-color);
     justify-content: center;
-    height: 262px;
+    height: 270px;
   }
-
   .news-frame {
     grid-column: 4 / 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 262px;
+    height: 270px;
   }
-
   .news-image {
     grid-column: 2 / span 2;
     grid-row: 1/2;
@@ -685,20 +649,15 @@ Setting for higher resolutions
     display: inline-block;
     margin-top: -42px;
   }
-
-  /* contextual menu: the menu changes according de viewport */
-  
   .post {
     display: grid;
     grid-template-columns: 6% 39% 10% 39% 6%;
     grid-template-rows: auto;
   }
-
   .post-img {
     grid-column: 2 / 3;
     max-width: 260px;
   }
-
   .post-content {
     grid-column: 4 / span 1;
     grid-row: 1 / 2;
@@ -708,15 +667,60 @@ Setting for higher resolutions
     align-content: flex-start;
     height: 100%;
   }
-
   .subtitle {
+    align-items: center;
     text-align: left;
+    margin-top: 40px;
   }
-
   .subtitle h3 {
     grid-column: 1 / span 2;
-    color: #32cd32;    
+    color: var(--third-color);   
+  }
+  /* Responisvness features for flavor section */
+  .flavor-spreading {
+    display: grid;
+    grid-template-columns: 6% 39% 10% 39% 6%;
+    grid-template-rows: auto;
+  }
+  .flavor-spreading-img {
+    grid-column: 2 / 3;
+    max-width: 260px;
+  }
+  .flavor-content {
+    grid-column: 4 / span 1;
+    grid-row: 1 / 2;
+    align-self: star;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 100%;
   }
 }
+  @media screen and (min-width: 1025px) {
+    .section-blog {
+      display: flex;
+      flex-direction: row;
+    }
+    .post{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* Utiliy Styles for Page Mood */
+
+.flavor-content{
+  margin: 40px 10px 40px 10px;
+}
+
+  .flavor-content h2{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+
+  .flavor-content p{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
 
 
