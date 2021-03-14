@@ -346,7 +346,7 @@ textarea {
 
 /* Medium Sizes Screens */
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   .contact {
     width: 605px;
     margin-top: 20px;
