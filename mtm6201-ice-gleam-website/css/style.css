@@ -771,7 +771,7 @@ Setting for higher resolutions
   .bimage {
     animation-name: movement;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
     animation-timing-function:linear;
     }
 
