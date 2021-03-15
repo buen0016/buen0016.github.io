@@ -578,7 +578,7 @@ Setting for higher resolutions
     display: none;
   }
   .section-head-highress {
-    display: revert;
+    display: inherit;
     display: flex;
     align-items: center;
   }
@@ -661,7 +661,6 @@ Setting for higher resolutions
   .post-content {
     grid-column: 4 / span 1;
     grid-row: 1 / 2;
-    align-self: star;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -690,7 +689,6 @@ Setting for higher resolutions
   .flavor-content {
     grid-column: 4 / span 1;
     grid-row: 1 / 2;
-    align-self: star;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -732,5 +730,49 @@ Setting for higher resolutions
     text-align: left;
     padding-left: 4px;
   }
+
+/* Micro Interactions */
+
+
+@keyframes zoom {
+    50% {    
+      transform: scale(1.5, 1.5);      
+     }
+    }
+
+@keyframes ice {
+    50% {    
+      transform: scale(1.1, 1.1);
+      transform: skew(5deg);      
+       }
+      }
+      
+@keyframes movement {
+  50% {    
+    transform: scale(1.1, 1.1);
+    transform: skew(5deg);      
+      }
+    }
+
+.product_photo img:hover{
+  animation-name: zoom;
+  transform: translate(10px, -10px);
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  }
+   
+.product_photo:hover{
+  animation-name: ice;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  }
+
+  .bimage {
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    }
 
 
