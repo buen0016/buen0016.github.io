@@ -1,0 +1,398 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  max-width: 1460px;
+  margin: auto;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Portfolio Website: This site is characterized mainly to use sticky images giving a sense of volume and depth */
+
+/* Utilities */
+
+:root {
+  --primary-color: #2b2d42;
+  --secondary-color: #e4572e;
+  --light-color: #edf2f4;
+  --third-color: #f6ae2d;
+  --fourth-color: #cd001f;
+  --action-color: #8d99ae;
+  --ultralight-color: #ffffff;
+  --ultradark-color: #000000;
+}
+
+html {
+  font-family: 'Nunito';
+  font-size: 14px;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-image: url('../images/main-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: 'Nunito';
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+}
+h2 {
+  font-family: 'Nunito';
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--action-color);
+  font-weight: bold;
+}
+h3 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+}
+h4 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--primary-color);
+}
+h5 {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--primary-color);
+}
+a {
+  font-family: 'Roboto';
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+p {
+  font-family: 'Roboto';
+  font-size: 0.75rem;
+  line-height: 2rem;
+  color: var(--primary-color);
+}
+img {
+  width: 100%;
+}
+
+/* Sticky Background */
+
+bg-paralax {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: -1;
+  border: solid 4px red;
+}
+
+.logo {
+  width: 100px;
+}
+
+.big-box {
+  max-width: 1440px;
+}
+
+nav {
+  max-width: 1440px;
+  padding: 10px;
+  margin: auto;
+}
+
+header {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px 0 10px;
+}
+
+header .header_content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.showreel {
+  display: none;
+}
+
+blockquote {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px 0 10px;
+}
+
+blockquote h4 {
+  font-style: italic;
+}
+
+.subtitle {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px 0 10px;
+}
+
+.project {
+  height: 200px;
+  padding: 30px 0px 30px 0px;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px 20px 10px;
+}
+
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.about-text {
+  margin: 0px 10px 0px 10px;
+  padding: 20px 0px 20px 0px;
+}
+
+.contact {
+  background-color: var(--light-color);
+  padding: 10px 10px 10px 10px;
+  box-shadow: 5px 7px 10px #33313166;
+  opacity: 1;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--ultralight-color);
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+input[type='checkbox'] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn1 {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 100%;
+  font-size: rem;
+  align-self: center;
+  color: var(--ultralight-color);
+  margin: 18px 0px 15px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.footer {
+  background-color: var(--fourth-color);
+  padding: 10px 10px 10px 10px;
+}
+
+.address {
+  padding: 20px 0px 20px 0px;
+}
+
+.phrase-mini h4 {
+  display: inline-block;
+  align-items: center;
+  color: var(--ultralight-color);
+  font-size: 2rem;
+  height: 120px;
+}
+
+.address h4 {
+  color: var(--ultralight-color);
+  font-size: 1.5rem;
+}
+
+.address p {
+  color: var(--ultralight-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.keepintouch a {
+  color: var(--ultralight-color);
+  height: 20px;
+}
+
+.social a {
+  color: var(--ultralight-color);
+}
