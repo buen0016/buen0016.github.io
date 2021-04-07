@@ -253,15 +253,39 @@ nav {
   border: 2px red solid;
   height: 91vh;
   margin: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 #navbarTogglerDemo02 ul {
   border: 2px blue solid;
-  justify-content: center;
-  align-content: center;
   height: 100%;
   margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+#navbarTogglerDemo02 ul:nth-child(1) {
+  display: none;
+}
+
+.nav-item.nav-phrase-mini h4 {
+  color: #000000;
+}
+
+.showreellink {
+  font-size: 0.5rem;
+  color: green;
+}
+
+.nav-item {
+  border: 1px solid green;
+}
+
+/* .nav-item:nth-child(1) {
+  border: 3px solid var(--primary-color);
+} */
 
 #navbarTogglerDemo02 ul li a {
   font-size: 3rem;
