@@ -430,3 +430,36 @@ input[type='checkbox'] {
 .social a {
   color: var(--ultralight-color);
 }
+
+/* Responsive Adjustments */
+
+@media screen and (min-width: 768px) {
+  .header_content_1 {
+    grid-area: title;
+    border: 1px solid red;
+  }
+
+  .header_content_2 {
+    grid-area: sub-title;
+    border: 1px solid yellow;
+  }
+
+  .showreel {
+    border: 1px solid green;
+    grid-area: showreel;
+    display: initial;
+  }
+
+  header .header_content {
+    align-content: center;
+    max-width: 768px;
+    margin: auto auto;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      'showreel title none none'
+      'showreel sub-title none none';
+  }
+}
