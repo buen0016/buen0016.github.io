@@ -107,7 +107,6 @@ section {
 }
 body {
   line-height: 1;
-  max-width: 1460px;
   margin: auto;
 }
 ol,
@@ -143,6 +142,7 @@ table {
   --action-color: #8d99ae;
   --ultralight-color: #ffffff;
   --ultradark-color: #000000;
+  --grey-color: #e1e3e4;
 }
 
 html {
@@ -176,8 +176,8 @@ body {
 }
 h1 {
   font-family: 'Nunito';
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 8rem;
+  line-height: 7rem;
   font-weight: bolder;
   color: var(--primary-color);
 }
@@ -226,21 +226,13 @@ img {
 
 /* Sticky Background */
 
-.bg-paralax {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: -1;
-  background-image: url('../images/main-bg.jpg');
-}
-
 .logo {
   width: 100px;
 }
 
 .big-box {
-  max-width: 768px;
-  background-color: var(--fourth-color);
+  margin: auto auto;
+  max-width: 100%;
 }
 
 #navbarTogglerDemo02 {
@@ -273,7 +265,6 @@ img {
 }
 
 .nav-item {
-  /* border: 1px solid green; */
   margin: 10px 0px;
 }
 
@@ -281,16 +272,21 @@ img {
   font-size: 3rem;
 }
 
+nav {
+  background-color: var(--grey-color);
+}
+
 header {
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 10px 0 10px;
+  margin: auto auto;
 }
 
 header .header_content {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -397,9 +393,15 @@ input[type='checkbox'] {
   transition-duration: 0.3s;
 }
 
-.footer-area {
+footer {
   background-color: var(--fourth-color);
+  margin: auto auto;
   padding: 10px 10px 10px 10px;
+}
+
+.footer-area {
+  max-width: 768px;
+  margin: auto auto;
 }
 
 .address {
@@ -414,18 +416,21 @@ input[type='checkbox'] {
   height: 120px;
 }
 
-.address h4 {
+.address-co h4,
+.address-ca h4 {
   color: var(--ultralight-color);
   font-size: 1.5rem;
 }
 
-.address p {
+.address-co p,
+.address-ca p {
   color: var(--ultralight-color);
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 2rem;
 }
 
-.site a {
+.site a,
+.mailing a {
   color: var(--ultralight-color);
   height: 20px;
 }
@@ -437,18 +442,19 @@ input[type='checkbox'] {
 /* Responsive Adjustments */
 
 @media screen and (min-width: 768px) {
+  nav {
+    background-color: none;
+  }
+
   .header_content_1 {
     grid-area: title;
-    border: 1px solid red;
   }
 
   .header_content_2 {
     grid-area: sub-title;
-    border: 1px solid yellow;
   }
 
   .showreel {
-    border: 1px solid green;
     display: initial;
   }
 
@@ -456,10 +462,9 @@ input[type='checkbox'] {
     align-content: center;
     max-width: 768px;
     margin: auto auto;
-    border: 1px solid blue;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 80% 20%;
     grid-template-areas:
       'title none'
       'sub-title none';
@@ -513,13 +518,11 @@ input[type='checkbox'] {
     grid-area: site;
   }
 
-  .footer.footer-area {
-    border: 2px green solid;
-    margin: auto auto;
+  footer .footer-area {
     max-width: 768px;
     display: grid;
-    grid-template-columns: 50% 25% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 75% 25%;
     grid-template-areas:
       'phrase colombia canada'
       'site mail social';
