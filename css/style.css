@@ -176,8 +176,8 @@ body {
 }
 h1 {
   font-family: 'Nunito';
-  font-size: 8rem;
-  line-height: 7rem;
+  font-size: 15vw;
+  line-height: 14vw;
   font-weight: bolder;
   color: var(--primary-color);
 }
