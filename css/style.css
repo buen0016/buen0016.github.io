@@ -173,6 +173,7 @@ body {
   background-image: url('../images/main-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 h1 {
   font-family: 'Nunito';
@@ -183,7 +184,7 @@ h1 {
 }
 h2 {
   font-family: 'Nunito';
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 2rem;
   color: var(--action-color);
   font-weight: bold;
@@ -191,7 +192,7 @@ h2 {
 h3 {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--secondary-color);
 }
 h4 {
@@ -209,13 +210,13 @@ h5 {
 }
 a {
   font-family: 'Roboto';
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
 }
 p {
   font-family: 'Roboto';
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: var(--primary-color);
 }
@@ -298,16 +299,18 @@ header .header_content {
 
 blockquote {
   height: 150px;
-  max-width: 768px;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 10px 0 10px;
   margin: auto auto;
+  border-left: 2px solid var(--secondary-color);
 }
 
 blockquote h4 {
   font-style: italic;
+  font-size: 1.5rem;
 }
 
 .subtitle {
@@ -398,6 +401,10 @@ footer {
   margin: auto auto;
   padding: 10px 10px 10px 10px;
 }
+.social {
+  display: flex;
+  height: 50px;
+}
 
 .footer-area {
   max-width: 768px;
@@ -423,10 +430,19 @@ footer {
 }
 
 .address-co p,
-.address-ca p {
+.address-ca p,
+.social a {
   color: var(--ultralight-color);
   font-size: 0.75rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  /* border: greenyellow 2px solid; */
+  margin: 20px 0px 10px 0px;
+}
+.site,
+.mailing {
+  color: var(--ultralight-color);
+  height: 20px;
+  margin-bottom: 20px;
 }
 
 .site a,
@@ -435,15 +451,16 @@ footer {
   height: 20px;
 }
 
-.social a {
-  color: var(--ultralight-color);
-}
-
 /* Responsive Adjustments */
 
 @media screen and (min-width: 768px) {
   nav {
     background-color: none;
+  }
+
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
   }
 
   .header_content_1 {
@@ -483,12 +500,17 @@ footer {
     grid-area: form;
   }
 
+  .contact-form {
+    max-width: 100%;
+  }
+
   .contact-area {
     margin: auto auto;
     max-width: 768px;
     display: grid;
+    grid-column-gap: 10px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 30% 70%;
     grid-template-areas:
       'title form'
       'info form';
