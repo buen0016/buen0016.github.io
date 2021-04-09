@@ -239,13 +239,13 @@ img {
 }
 
 .big-box {
-  max-width: 1440px;
+  max-width: 768px;
   background-color: var(--fourth-color);
 }
 
 #navbarTogglerDemo02 {
   /* border: 2px red solid; */
-  height: 95vh;
+  height: 99vh;
   position: relative;
   background-color: var(--primary-color);
 }
@@ -302,10 +302,12 @@ header .header_content {
 
 blockquote {
   height: 150px;
+  max-width: 768px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 10px 0 10px;
+  margin: auto auto;
 }
 
 blockquote h4 {
@@ -324,6 +326,8 @@ section {
   flex-direction: column;
   justify-content: center;
   padding: 0px 10px 0 10px;
+  max-width: 768px;
+  margin: auto auto;
 }
 
 .project {
@@ -334,7 +338,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 10px 20px 10px;
+  padding: 20px 0px 20px 0px;
 }
 
 .blog-item {
@@ -351,7 +355,6 @@ section {
 }
 
 .about-text {
-  margin: 0px 10px 0px 10px;
   padding: 20px 0px 20px 0px;
 }
 
@@ -394,7 +397,7 @@ input[type='checkbox'] {
   transition-duration: 0.3s;
 }
 
-.footer {
+.footer-area {
   background-color: var(--fourth-color);
   padding: 10px 10px 10px 10px;
 }
@@ -422,7 +425,7 @@ input[type='checkbox'] {
   line-height: 1rem;
 }
 
-.keepintouch a {
+.site a {
   color: var(--ultralight-color);
   height: 20px;
 }
@@ -446,7 +449,6 @@ input[type='checkbox'] {
 
   .showreel {
     border: 1px solid green;
-    grid-area: showreel;
     display: initial;
   }
 
@@ -456,10 +458,70 @@ input[type='checkbox'] {
     margin: auto auto;
     border: 1px solid blue;
     display: grid;
-    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
-      'showreel title none none'
-      'showreel sub-title none none';
+      'title none'
+      'sub-title none';
+  }
+
+  .navshowreel {
+    display: none;
+    border: 1px solid red;
+  }
+
+  .contact .subtitle h3 {
+    grid-area: title;
+  }
+
+  .contact-form {
+    grid-area: form;
+  }
+
+  .contact-area {
+    margin: auto auto;
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      'title form'
+      'info form';
+  }
+
+  .phrase-mini {
+    grid-area: phrase;
+  }
+
+  .address-co {
+    grid-area: colombia;
+  }
+
+  .address-ca {
+    grid-area: canada;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .mailing {
+    grid-area: mail;
+  }
+
+  .site {
+    grid-area: site;
+  }
+
+  .footer.footer-area {
+    border: 2px green solid;
+    margin: auto auto;
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: 50% 25% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'phrase colombia canada'
+      'site mail social';
   }
 }
