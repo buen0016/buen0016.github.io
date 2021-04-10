@@ -238,22 +238,18 @@ img {
 
 #navbarTogglerDemo02 {
   border: 4px green solid;
-  height: 99vh;
+  height: 95vh;
   position: relative;
   background-color: var(--primary-color);
 }
 
 #navbarTogglerDemo02 ul {
   border: 2px blue solid;
-  margin: 0px 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 20px;
+  left: 20px;
+  /* -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 #navbarTogglerDemo02 ul li a {
