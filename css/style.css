@@ -246,7 +246,7 @@ img {
 #navbarTogglerDemo02 ul {
   border: 2px blue solid;
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 20px;
   /* -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
@@ -464,6 +464,14 @@ footer {
   #navbarTogglerDemo02 ul li {
     border: 2px red solid;
     align-items: flex-start;
+  }
+
+  #navbarTogglerDemo02 ul {
+    border: 2px green solid;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   nav {
