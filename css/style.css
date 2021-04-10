@@ -247,10 +247,10 @@ img {
   border: 2px blue solid;
   margin: 0px 20px;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 45%;
-  /* -ms-transform: translate(-50%, -40%);
-  transform: translate(-50%, -50%); */
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 }
 
 #navbarTogglerDemo02 ul li a {
