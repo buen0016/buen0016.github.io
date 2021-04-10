@@ -396,11 +396,12 @@ input[type='checkbox'] {
 footer {
   background-color: var(--fourth-color);
   margin: auto auto;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 10px 20px 10px;
 }
 .social {
   display: flex;
   height: 50px;
+  grid-area: social;
 }
 
 .footer-area {
@@ -427,12 +428,10 @@ footer {
 }
 
 .address-co p,
-.address-ca p,
-.social a {
+.address-ca p {
   color: var(--ultralight-color);
   font-size: 0.75rem;
   line-height: 1.5rem;
-  /* border: greenyellow 2px solid; */
   margin: 20px 0px 10px 0px;
 }
 .site,
@@ -443,9 +442,14 @@ footer {
 }
 
 .site a,
-.mailing a {
+.mailing a,
+.social a {
   color: var(--ultralight-color);
   height: 20px;
+}
+
+.social a {
+  margin: 0px 20px 0px 0px;
 }
 
 /* Responsive Adjustments */
@@ -525,10 +529,6 @@ footer {
     grid-area: canada;
   }
 
-  .social {
-    grid-area: social;
-  }
-
   .mailing {
     grid-area: mail;
   }
@@ -536,14 +536,20 @@ footer {
   .site {
     grid-area: site;
   }
+  footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   footer .footer-area {
-    max-width: 768px;
+    width: 768px;
     display: grid;
     grid-template-columns: 50% 25% 25%;
     grid-template-rows: 75% 25%;
     grid-template-areas:
       'phrase colombia canada'
-      'site mail social';
+      'social site mail';
   }
 }
