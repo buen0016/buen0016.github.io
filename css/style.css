@@ -246,8 +246,8 @@ img {
 #navbarTogglerDemo02 ul {
   border: 2px blue solid;
   position: absolute;
-  top: 25px;
-  left: 20px;
+  top: 30px;
+  left: 30px;
   /* -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
 }
