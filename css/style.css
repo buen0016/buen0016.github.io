@@ -248,8 +248,8 @@ img {
   margin: 0px 20px;
   position: absolute;
   top: 50%;
-  left: 45%;
-  -ms-transform: translate(-50%, -40%);
+  left: 50%;
+  /* -ms-transform: translate(-50%, -50%); */
   transform: translate(-50%, -50%);
 }
 
