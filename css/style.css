@@ -298,14 +298,11 @@ header .header_content {
 }
 
 blockquote {
+  max-width: 768px;
   height: 150px;
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 10px 0 10px;
+  display: grid;
+  padding: 10px 0px 10 0px;
   margin: auto auto;
-  border-left: 2px solid var(--secondary-color);
 }
 
 blockquote h4 {
