@@ -184,21 +184,21 @@ h1 {
 }
 h2 {
   font-family: 'Nunito';
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   color: var(--action-color);
   font-weight: bold;
 }
 h3 {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--secondary-color);
 }
 h4 {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   color: var(--primary-color);
 }
@@ -234,6 +234,7 @@ img {
 .big-box {
   margin: auto auto;
   max-width: 100%;
+  position: absolute;
 }
 
 #navbarTogglerDemo02 {
@@ -331,6 +332,21 @@ section {
 .project {
   height: 200px;
   padding: 30px 0px 30px 0px;
+}
+
+.project-info a {
+  color: var(--secondary-color);
+  font-size: 1.75rem;
+}
+
+.project-info a:hover {
+  color: var(--action-color);
+  cursor: pointer;
+}
+
+.project-info h5 {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .blog {
@@ -488,6 +504,10 @@ footer {
     background-color: none;
   }
 
+  .showreel {
+    display: inherit;
+  }
+
   h1 {
     font-size: 8rem;
     line-height: 8rem;
@@ -495,6 +515,7 @@ footer {
 
   .header_content_1 {
     grid-area: title;
+    align-self: center;
   }
 
   .header_content_2 {
