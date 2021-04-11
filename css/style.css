@@ -175,6 +175,16 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+
+.page-about {
+  background-image: url('../images/diego.jpg');
+  background-attachment: fixed;
+  background-position: left bottom;
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  z-index: 50;
+}
+
 h1 {
   font-family: 'Nunito';
   font-size: 15vw;
@@ -477,7 +487,17 @@ footer {
   margin: 0px 20px 0px 0px;
 }
 
-/* ----- Responsive Adjustments ----- */
+/* Settings for Blog and Post */
+.about-content-info {
+  height: 300px;
+}
+.about-content-info-title {
+  height: 50px;
+}
+
+/* ------------------------------------
+Setting for higher resolutions 
+---------------------------------------- */
 
 /* ----- Responsive Adjustments Index ----- */
 
@@ -633,7 +653,7 @@ footer {
       'social site mail';
   }
 
-  /* ----- Responsive Adjustments Bits & Pixels ----- */
+  /* ----- Responsive Adjustments Bits & Pixels Pages ----- */
 
   section.portfolio-content {
     border: color 4px red;
@@ -645,5 +665,14 @@ footer {
 
   .portfolio-project {
     max-width: 350px;
+  }
+
+  /* ----- Responsive Adjustments Blog & Post ----- */
+
+  .about-content-info {
+    height: 200px;
+  }
+  .about-content-info-title {
+    height: 50px;
   }
 }
