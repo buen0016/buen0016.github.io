@@ -315,6 +315,8 @@ blockquote h4 {
 
 .subtitle {
   height: 100px;
+  max-width: 768px;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,6 +349,10 @@ section {
 .project-info h5 {
   color: var(--primary-color);
   font-weight: bold;
+}
+
+.portfolio-project-img {
+  margin: auto auto;
 }
 
 .blog {
@@ -471,7 +477,9 @@ footer {
   margin: 0px 20px 0px 0px;
 }
 
-/* Responsive Adjustments */
+/* ----- Responsive Adjustments ----- */
+
+/* ----- Responsive Adjustments Index ----- */
 
 @media screen and (min-width: 768px) {
   #navbarTogglerDemo02 ul li {
@@ -554,7 +562,7 @@ footer {
 
   .project {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 30% 70%;
   }
 
   .project-date {
@@ -623,5 +631,19 @@ footer {
     grid-template-areas:
       'phrase colombia canada'
       'social site mail';
+  }
+
+  /* ----- Responsive Adjustments Bits & Pixels ----- */
+
+  section.portfolio-content {
+    border: color 4px red;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-project {
+    max-width: 350px;
   }
 }
