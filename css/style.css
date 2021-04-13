@@ -301,6 +301,7 @@ header {
 
 header .header_content {
   height: 500px;
+  max-width: 768px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -578,7 +579,7 @@ Setting for higher resolutions
 
   header .header_content {
     align-content: center;
-    max-width: 768px;
+    width: 768px;
     margin: auto auto;
     display: grid;
     grid-template-columns: 90% 10%;
