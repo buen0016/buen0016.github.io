@@ -618,6 +618,7 @@ Setting for higher resolutions
 
   .contact .subtitle h3 {
     grid-area: title;
+    align-self: start;
   }
 
   .contact-form {
