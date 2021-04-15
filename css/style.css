@@ -486,7 +486,7 @@ footer {
 
 /* Settings for Blog and Post */
 .about-content {
-  padding: 80px 0 80px 0px;
+  padding: 20px 0 80px 0px;
 }
 
 .about-content-info {
@@ -524,20 +524,11 @@ body.page-project header h1 {
 }
 
 body.page-project .project-banner {
-  height: 250px;
-  overflow: hidden;
-  position: relative;
-}
-
-body.page-project .project-banner img {
-  height: auto;
-
-  margin: auto auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/monserrate-banner.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .about-contact-info-images {
