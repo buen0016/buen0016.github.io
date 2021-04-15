@@ -230,10 +230,6 @@ p {
   line-height: 2rem;
   color: var(--primary-color);
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Sticky Background */
 
@@ -489,6 +485,10 @@ footer {
 }
 
 /* Settings for Blog and Post */
+.about-content {
+  padding: 80px 0 80px 0px;
+}
+
 .about-content-info {
   height: 300px;
 }
@@ -507,15 +507,47 @@ body.page-project .bigbox header {
   height: 300px;
 }
 
-body.page-project .bigbox header h1 {
-  color: var(--ultralight-color);
+body.page-project .header_content {
+  background-color: var(--primary-color);
+  display: flex;
 }
 
-.about-contect-info-images {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  gap: 10px 10px;
+body.page-project .header_content_1 {
+  background-color: var(--primary-color);
+  display: flex;
+  margin-top: 5%;
+}
+
+body.page-project header h1 {
+  color: var(--ultralight-color);
+  align-self: flex;
+}
+
+body.page-project .project-banner {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+body.page-project .project-banner img {
+  height: auto;
+
+  margin: auto auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-contact-info-images {
+  margin: auto auto;
+}
+
+.about-contact-info-images img {
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 /* ------------------------------------
@@ -526,7 +558,6 @@ Setting for higher resolutions
 
 @media screen and (min-width: 768px) {
   #navbarTogglerDemo02 ul li {
-    /* border: 2px red solid; */
     align-items: flex-start;
     height: 50px;
   }
@@ -600,7 +631,6 @@ Setting for higher resolutions
 
   .navshowreel {
     display: none;
-    /* border: 1px solid red; */
   }
 
   .project {
@@ -689,6 +719,14 @@ Setting for higher resolutions
 
   .portfolio-project {
     max-width: 350px;
+  }
+
+  .about-contact-info-images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 20px 20px;
+    justify-content: center;
   }
 
   /* ----- Responsive Adjustments Blog & Post ----- */
