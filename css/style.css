@@ -325,10 +325,7 @@ blockquote h4 {
 .subtitle {
   height: 100px;
   max-width: 768px;
-  margin: auto auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: left;
 }
 
 section {
