@@ -720,17 +720,6 @@ Setting for higher resolutions
   .about-content-info-title {
     height: 50px;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  /* .page-about {
-    background-image: url('../images/diego.jpg');
-    background-attachment: fixed;
-    background-position: left bottom;
-    background-size: 300px auto;
-    background-repeat: no-repeat;
-  } */
-
   img.sticky {
     position: fixed;
     top: 65%;
