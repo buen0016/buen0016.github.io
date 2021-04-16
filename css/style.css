@@ -177,12 +177,11 @@ body {
 }
 
 .page-about {
-  background-image: url('../images/diego.jpg');
+  background-image: none;
   background-attachment: fixed;
   background-position: left bottom;
   background-size: 300px auto;
   background-repeat: no-repeat;
-  z-index: 50;
 }
 
 h1 {
@@ -224,7 +223,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   color: var(--secondary-color);
-  margin-top: 5px;
+  margin-top: 15px;
 }
 p {
   font-family: 'Roboto';
@@ -303,6 +302,10 @@ header .header_content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+header .header_content_1 {
+  margin-top: 20px;
 }
 
 .showreel {
@@ -440,6 +443,7 @@ footer {
   align-items: center;
   color: var(--ultralight-color);
   font-size: 2rem;
+  line-height: 2rem;
   height: 120px;
 }
 
@@ -454,12 +458,12 @@ footer {
   color: var(--ultralight-color);
   font-size: 0.75rem;
   line-height: 1.5rem;
-  margin: 20px 0px 10px 0px;
+  margin: 10px 0px 20px 0px;
 }
 .site,
 .mailing {
   color: var(--ultralight-color);
-  height: 20px;
+  height: 15px;
   margin-bottom: 20px;
 }
 
@@ -642,7 +646,7 @@ Setting for higher resolutions
     margin: auto auto;
     max-width: 768px;
     display: grid;
-    grid-column-gap: 10px;
+    grid-column-gap: 30px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 30% 70%;
     grid-template-areas:
@@ -670,7 +674,7 @@ Setting for higher resolutions
     grid-area: site;
   }
   footer {
-    height: 300px;
+    height: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -688,13 +692,13 @@ Setting for higher resolutions
 
   /* ----- Responsive Adjustments Bits & Pixels Pages ----- */
 
-  /* section.portfolio-content {
+  section.portfolio-content {
     border: color 4px red;
     display: flexbox;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  } */
+  }
 
   .portfolio-project {
     max-width: 350px;
@@ -715,5 +719,21 @@ Setting for higher resolutions
   }
   .about-content-info-title {
     height: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* .page-about {
+    background-image: url('../images/diego.jpg');
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+  } */
+
+  img.sticky {
+    position: fixed;
+    top: 65%;
+    width: 300px;
   }
 }
