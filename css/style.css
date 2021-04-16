@@ -414,7 +414,6 @@ input[type='checkbox'] {
   border: none;
   height: 40px;
   width: 100%;
-  font-size: rem;
   align-self: center;
   color: var(--ultralight-color);
   margin: 18px 0px 15px;
@@ -518,7 +517,6 @@ body.page-project .header_content_1 {
 
 body.page-project header h1 {
   color: var(--ultralight-color);
-  align-self: flex;
 }
 
 body.page-project .project-banner {
@@ -567,10 +565,6 @@ Setting for higher resolutions
     grid-column: 1 / span 1;
     grid-row: 1 / span 6;
     align-self: start;
-  }
-
-  nav {
-    background-color: none;
   }
 
   .showreel {
@@ -697,8 +691,7 @@ Setting for higher resolutions
   /* ----- Responsive Adjustments Bits & Pixels Pages ----- */
 
   section.portfolio-content {
-    border: color 4px red;
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -724,7 +717,6 @@ Setting for higher resolutions
   .about-content-info-title {
     height: 50px;
   }
-  
 }
 
 @media screen and (min-width: 1440px) {
@@ -734,3 +726,4 @@ Setting for higher resolutions
     top: 65%;
     width: 300px;
   }
+}
