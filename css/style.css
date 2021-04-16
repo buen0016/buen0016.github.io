@@ -176,6 +176,10 @@ body {
   background-position: center;
 }
 
+img.sticky {
+  display: none;
+}
+
 .page-about {
   background-image: none;
   background-attachment: fixed;
@@ -720,9 +724,13 @@ Setting for higher resolutions
   .about-content-info-title {
     height: 50px;
   }
+  
+}
+
+@media screen and (min-width: 1440px) {
   img.sticky {
+    display: inherit;
     position: fixed;
     top: 65%;
     width: 300px;
   }
-}
